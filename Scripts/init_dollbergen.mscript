@@ -1,0 +1,9 @@
+set-geo-bounds bounds=10.1646,52.3994,10.1993,52.4235
+set-print-bounds-geo bounds=10.1646,52.3994,10.1993,52.4235
+//download-osm-overpass
+//save-source index=1  file=data/dollbergen.osm
+load-source data/dollbergen.osm
+remove-source index=1
+use-ruleset location=Rules/Dollbergen.mrules as-alias=dollbergen
+apply-ruleset
+//export-svg zoom=18  compatibility=inkscape
