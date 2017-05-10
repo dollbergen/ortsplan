@@ -6,4 +6,4 @@ load-source data/dollbergen.osm
 remove-source index=1
 use-ruleset location=Rules/Dollbergen.mrules as-alias=dollbergen
 apply-ruleset
-//export-svg zoom=18  compatibility=inkscape
+//export-svg zoom=17 compatibility=inkscape

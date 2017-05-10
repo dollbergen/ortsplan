@@ -9,6 +9,7 @@
 features
 	points, areas
 		parking : amenity=parking
+		parking bicycle : amenity=bicycle_parking
 		postbox : amenity=post_box
 		postoffice : amenity=post_office
 		telephone : amenity=telephone
@@ -83,7 +84,6 @@ features
 		orchard : landuse=orchard
 		farmland : landuse=farmland
 		quarry : landuse=quarry
-		recycling : amenity=recycling
 
 	lines
 		oneway : oneway=yes OR oneway=true OR oneway=-1
@@ -167,6 +167,7 @@ features
 		lift_gate : barrier=lift_gate
 		aerialway station : aerialway=station
 		motorway_junction : highway=motorway_junction
+		bench : amenity=bench
 
 		gps waypoints : gpswaypoint[]
 		gps trackpoints: gpstrack[].gpspoint[]
@@ -316,7 +317,7 @@ rules
 		define
 			icon-image : icons/Dollbergen/playground.png
 			min-zoom : 15
-			icon-width : 15:16;17:48;18:60
+			icon-width : 40
 		draw : icon
 	target : riding arena
 		define
@@ -326,7 +327,7 @@ rules
 		define
 			icon-image : icons/Dollbergen/ridingarena.png
 			min-zoom : 15
-			icon-width : 15:16;17:48;18:60
+			icon-width : 40
 		draw : icon
 	target: recycling
 		define
@@ -344,9 +345,9 @@ rules
 			text-offset-vertical : 150%
 		draw : text
 		define
-			icon-image : icons/SJJB/png/amenity_recycling.p.32.png
+			icon-image : icons/Dollbergen/recycling.png
 			min-zoom : 16
-			icon-width : 48
+			icon-width : 40
 		draw : icon
 		define
 			min-zoom : 17
@@ -1142,15 +1143,21 @@ rules
 
 	target: parking
 		define
-			icon-image : icons/SJJB/png/transport_parking.p.32.png
+			icon-image : icons/Dollbergen/parking.png
 			min-zoom : 15
 			icon-width : 16
 		draw : icon
+	target: parking bicycle
+		define
+			icon-image : icons/Dollbergen/parking_bicycle.png
+			min-zoom : 15
+			icon-width : 40
+		draw : icon
 	target: bus stop
 		define
-			icon-image : icons/Dollbergen/transport_bus_stop.p.32.png
+			icon-image : icons/Dollbergen/bus_stop.png
 			min-zoom : 15
-			icon-width : 15:10;18:16
+			icon-width : 40
 		draw : icon
 	target: railway station
 		define
@@ -1168,28 +1175,28 @@ rules
 		//draw : text
 	target: postbox
 		define
-			icon-image : icons/SJJB/png/amenity_post_box.p.32.png
+			icon-image : icons/Dollbergen/post_box.png
 			min-zoom : 16
-			icon-width : 16
+			icon-width : 40
 		draw : icon
 	target: postoffice
 		define
-			icon-image : icons/SJJB/png/amenity_post_office.p.32.png
+			icon-image : icons/Dollbergen/post_office.png
 			min-zoom : 16
-			icon-width : 16
+			icon-width : 40
 		draw : icon
 	target: telephone
 		define
-			icon-image : icons/SJJB/png/amenity_telephone.p.32.png
+			icon-image : icons/Dollbergen/telephone.png
 			min-zoom : 16
-			icon-width : 16
+			icon-width : 40
 		draw : icon
 
 	target: fire station
 		define
-			icon-image : icons/SJJB/png/amenity_firestation.p.32.png
+			icon-image : icons/Dollbergen/firestation.png
 			min-zoom : 16
-			icon-width : 16
+			icon-width : 40
 		draw : icon
 	target: hospital
 		define
@@ -1210,15 +1217,21 @@ rules
 		draw : icon
 	target: cafe
 		define
-			icon-image : icons/SJJB/png/food_cafe.p.32.png
+			icon-image : icons/Dollbergen/cafe.png
 			min-zoom : 16
-			icon-width : 16
+			icon-width : 40
 		draw : icon
 	target: bbq
 		define
 			icon-image : icons/Dollbergen/bbq.png
 			min-zoom : 16
-			icon-width : 48
+			icon-width : 40
+		draw : icon
+	target: bench
+		define
+			icon-image : icons/Dollbergen/bench.png
+			min-zoom : 16
+			icon-width : 40
 		draw : icon
 	target: supermarket
 		define
@@ -1234,9 +1247,9 @@ rules
 		draw : icon
 	target: convenience
 		define
-			icon-image : icons/SJJB/png/shopping_convenience.p.32.png
+			icon-image : icons/Dollbergen/convenience.png
 			min-zoom : 16
-			icon-width : 16
+			icon-width : 40
 		draw : icon
 
 	target: mini roundabout
@@ -1247,9 +1260,9 @@ rules
 		draw : icon
 	target: church
 		define
-			icon-image : icons/SJJB/png/place_of_worship_christian3.p.32.png
+			icon-image : icons/Dollbergen/church.png
 			min-zoom : 16
-			icon-width : 16
+			icon-width : 40
 		define
 			text-offset-vertical : 150%
 		draw : text
@@ -1267,9 +1280,9 @@ rules
 			text-offset-vertical : 150%
 		draw : text
 		define
-			icon-image : icons/SJJB/png/money_bank2.p.32.png
+			icon-image : icons/Dollbergen/bank.png
 			min-zoom : 16
-			icon-width : 16
+			icon-width : 40
 		draw : icon
 	target: atm
 		define
@@ -1290,15 +1303,15 @@ rules
 			font-size : 10
 		draw : text
 		define
-			icon-image : icons/SJJB/png/food_restaurant.p.32.png
+			icon-image : icons/Dollbergen/restaurant.png
 			min-zoom : 16
-			icon-width : 16
+			icon-width : 40
 		draw : icon
 	target: hair dresser
 		define
-			icon-image : icons/SJJB/png/shopping_hairdresser.p.32.png
+			icon-image : icons/Dollbergen/hairdresser.png
 			min-zoom : 16
-			icon-width : 16
+			icon-width : 40
 		draw : icon
 
 	target: toilets
@@ -1315,9 +1328,9 @@ rules
 		draw : icon
 	target: library
 		define
-			icon-image : icons/SJJB/png/amenity_library.p.32.png
+			icon-image : icons/Dollbergen/library.png
 			min-zoom : 16
-			icon-width : 16
+			icon-width : 40
 		draw : icon
 	target: bakery
 		define
@@ -1345,7 +1358,7 @@ rules
 		define
 			icon-image : icons/Dollbergen/beauty.png
 			min-zoom : 16
-			icon-width : 48
+			icon-width : 40
 		draw : icon
 		define
 			min-zoom : 17
@@ -1355,7 +1368,7 @@ rules
 		draw : text
 	target: tree
 		define
-			icon-image : http://svn.openstreetmap.org/applications/rendering/mapnik/symbols/tree2.png
+			icon-image : icons/Dollbergen/tree.png
 			min-zoom : 16
 			icon-width : 6
 		draw : icon
@@ -1383,9 +1396,9 @@ rules
 
 	target : gate
 		define
-			icon-image : icons/SJJB/png/barrier_gate.p.32.png
+			icon-image : icons/Dollbergen/barrier_gate.png
 			min-zoom : 16
-			icon-width : 7
+			icon-width : 40
 		draw : icon
 
 	target : tourism*
