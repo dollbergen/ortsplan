@@ -7,8 +7,6 @@
 // Icons used: Map icons CC-0 from SJJB Management (http://www.sjjb.co.uk/mapicons)
 
 features
-        mycircle : way[highway=residential].node[highway=turning_circle]
-        
 	points, areas
 		parking : amenity=parking
 		postbox : amenity=post_box
@@ -49,6 +47,8 @@ features
 		beach : natural=beach
 		building : building=yes
 		building : building=residential
+		building : building=transportation
+		building : building=industrial
 		water : natural=water OR waterway=riverbank OR landuse=reservoir OR landuse=basin or waterway=dock
 		village green : landuse=village_green
 		forest : landuse=forest OR natural=wood
@@ -118,7 +118,7 @@ features
 		pier : man_made=pier
 		bridge foot : bridge=yes AND (foot=yes OR highway=footway)
 		historic citywalls : historic=citywalls OR historic=city_wall
-		power_line : power=line OR power=minor_line
+		// power_line : power=line OR power=minor_line
 		aerialway closed: @isOneOf(aerialway,cable_car,gondola,mixed_lift)
 		aerialway open: @isOneOf(aerialway,chair_lift,drag_lift)
 
@@ -143,7 +143,7 @@ features
 	points
 		place city : place=city
 		place town : place=town
-		place village : place=village
+		//place village : place=village
 		place hamlet : place=hamlet
 		place locality: place=locality
 		place isolated_dwelling : place=isolated_dwelling
@@ -157,7 +157,7 @@ features
 		cafe : amenity=cafe
 		pharmacy : amenity=pharmacy
 		peak : natural=peak
-		powertower : power=tower OR power=pole
+		//powertower : power=tower OR power=pole
 		info : information=guidepost
 		bollard : barrier=bollard
 		lift_gate : barrier=lift_gate
@@ -636,16 +636,6 @@ rules
 			text-align-vertical : center
 		draw:text
 
-	target : highway access*
-		define
-			min-zoom : 13
-			line-width : 13:1;15:2;18:4
-			line-style : dash
-			line-color : #F7D4D4
-		for : access=destination
-			define
-				line-color : lightblue white 50%
-		draw : line
 
 	target : highway construction
 		define
@@ -818,22 +808,6 @@ rules
 				min-zoom : 15
 				max-zoom : 20
 			draw : text
-		elseif : *service
-			define
-				min-zoom : 13
-				line-color : white
-				line-width : 12:0.5;13:1;15:3;18:5
-				border-style : solid
-				border-color : #FEFEB2 black 20%
-				border-width : 15%
-			for : tunnel=yes
-				define
-					border-style : dot
-			for : bridge=yes
-				define
-					border-color : #000
-			draw : line
-			draw : text
 		elseif : *pedestrian
 			for : not area
 				define
@@ -965,6 +939,16 @@ rules
 					border-opacity : 1
 			draw : line
 			draw : text
+		elseif : *access*
+			define
+				min-zoom : 13
+				line-width : 13:1;15:2;18:4
+				line-style : dash
+				line-color : #F7D4D4
+			for : access=destination
+				define
+					line-color : lightblue white 50%
+			draw : line
 		elseif : *path
 			define
 				min-zoom : 13
@@ -993,6 +977,23 @@ rules
 				line-style : none
 				painting-cycle : 599
 			draw : shape	
+		elseif : *service
+			define
+				min-zoom : 13
+				line-color : white
+				line-width : 12:0.5;13:1;15:3;18:5
+				border-style : solid
+				border-color : #FEFEB2 black 20%
+				border-width : 15%
+				painting-cycle : 599
+			for : tunnel=yes
+				define
+					border-style : dot
+			for : bridge=yes
+				define
+					border-color : #000
+			draw : line
+			draw : text
 		else
 			stop
 
@@ -1120,12 +1121,12 @@ rules
 			fill-color : #7981B0
 			shape-size : 12:5;18:8
 		draw : shape
-		define
-			min-zoom : 14
-			font-size : 12
-			text-color : #7981B0
-			text-offset-vertical : -150%
-		draw : text
+		//define
+		//	min-zoom : 14
+		//	font-size : 12
+		//	text-color : #7981B0
+		//	text-offset-vertical : -150%
+		//draw : text
 	target: postbox
 		define
 			icon-image : icons/SJJB/png/amenity_post_box.p.32.png

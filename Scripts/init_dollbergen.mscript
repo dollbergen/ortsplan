@@ -1,5 +1,5 @@
-set-geo-bounds bounds=10.1646,52.3994,10.1993,52.4235
-set-print-bounds-geo bounds=10.1646,52.3994,10.1993,52.4235
+set-geo-bounds bounds=10.16,52.402,10.205,52.423
+set-print-bounds-geo bounds=10.16,52.402,10.205,52.423
 //download-osm-overpass
 //save-source index=1  file=data/dollbergen.osm
 load-source data/dollbergen.osm
