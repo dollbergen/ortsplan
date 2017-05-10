@@ -34,11 +34,13 @@ features
 		amenity pub : amenity=pub
 		amenity fast_food : amenity=fast_food
 		aerodrome : aeroway=aerodrome
-		housenumber : [addr:housenumber]
+		//housenumber : [addr:housenumber]
 	// These are not shown on Mapnik
 		puffin : crossing_ref=puffin
 		memorial : historic=memorial
 		highway cul-de-sac : highway=turning_circle
+		bbq: amenity=bbq
+		riding arena : leisure=pitch AND sport=equestrian
 
 
 
@@ -81,6 +83,7 @@ features
 		orchard : landuse=orchard
 		farmland : landuse=farmland
 		quarry : landuse=quarry
+		recycling : amenity=recycling
 
 	lines
 		oneway : oneway=yes OR oneway=true OR oneway=-1
@@ -153,6 +156,7 @@ features
 		supermarket : shop=supermarket
 		convenience : shop=convenience
 		bakery : shop=bakery
+		beauty : shop=beauty
 		restaurant : amenity=restaurant
 		cafe : amenity=cafe
 		pharmacy : amenity=pharmacy
@@ -312,9 +316,44 @@ rules
 		define
 			icon-image : icons/Dollbergen/playground.png
 			min-zoom : 15
-			icon-width : 15:10;18:16
+			icon-width : 15:16;17:48;18:60
 		draw : icon
-
+	target : riding arena
+		define
+			line-color : #75664F
+			line-width : 1
+		draw : line
+		define
+			icon-image : icons/Dollbergen/ridingarena.png
+			min-zoom : 15
+			icon-width : 15:16;17:48;18:60
+		draw : icon
+	target: recycling
+		define
+			min-zoom : 10
+			fill-color : #CCCCCC
+			line-style : none
+		draw : fill
+		define
+			line-color : #75664F
+			line-width : 1
+		draw : line
+		define
+			min-zoom : 17
+			text-color : #2B80FE
+			text-offset-vertical : 150%
+		draw : text
+		define
+			icon-image : icons/SJJB/png/amenity_recycling.p.32.png
+			min-zoom : 16
+			icon-width : 48
+		draw : icon
+		define
+			min-zoom : 17
+			text-color : #AA33AA
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
 	target : $featuretype(area)
 		define
 			line-style : none
@@ -659,7 +698,7 @@ rules
 
 	target : highway*
 		define
-			font-size : 15:7;18:10
+			font-size : 15:7;17:16;18:10
 			font-weight : bold
 
 		for : oneway=yes OR oneway=true
@@ -1175,11 +1214,11 @@ rules
 			min-zoom : 16
 			icon-width : 16
 		draw : icon
-	target: recycling
+	target: bbq
 		define
-			icon-image : icons/SJJB/png/amenity_recycling.p.32.png
+			icon-image : icons/Dollbergen/bbq.png
 			min-zoom : 16
-			icon-width : 16
+			icon-width : 48
 		draw : icon
 	target: supermarket
 		define
@@ -1290,6 +1329,23 @@ rules
 			icon-image : icons/SJJB/png/shopping_bakery.p.32.png
 			min-zoom : 16
 			icon-width : 16
+		draw : icon
+		define
+			min-zoom : 17
+			text-color : #AA33AA
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
+	target: beauty
+		define
+			min-zoom : 17
+			text-color : #2B80FE
+			text-offset-vertical : 150%
+		draw : text
+		define
+			icon-image : icons/Dollbergen/beauty.png
+			min-zoom : 16
+			icon-width : 48
 		draw : icon
 		define
 			min-zoom : 17
