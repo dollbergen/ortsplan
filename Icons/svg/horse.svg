@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="750"
+   height="650"
+   id="svg2"
+   sodipodi:docname="horse.svg"
+   inkscape:version="0.92.1 r">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1328"
+     inkscape:window-height="644"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="0.39656057"
+     inkscape:cx="364.6313"
+     inkscape:cy="398.61131"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <cc:license
+           resource="https://creativecommons.org/publicdomain/zero/1.0/" />
+        <cc:attributionURL
+           resource="https://commons.wikimedia.org/wiki/File:Sinnbild_Gespannfuhrwerk,_StVO_2004.svg" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(333.79825,-208.11908)"
+     id="layer1">
+    <g
+       transform="matrix(1.25,0,0,-1.25,-335.04805,859.3689)"
+       id="g2993">
+      <g
+         transform="scale(0.12)"
+         id="g2995">
+        <path
+           style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.15000001"
+           d="m 84.634766,116.21484 v 42.31641 L 0,257.27344 l 21.158203,21.15625 98.740237,-21.15625 41.14062,74.66992 c -3.8955,12.351 -5.875,25.22433 -5.875,38.17383 0,17.349 3.55477,34.51454 10.44727,50.43554 l 5.64453,13.04102 -107.779298,70.5293 v 148.11133 l 35.263672,-21.16016 v -98.74024 l 91.687496,-54.45312 84.63477,195.50976 -7.05273,35.26563 h 35.26367 l 7.05468,-35.26563 -66.55859,-194.12109 c 31.0845,7.143 62.87503,10.74805 94.76953,10.74805 33.5805,0 67.03878,-3.9972 99.67578,-11.9082 l 62.54102,110.64843 -63.47852,119.89844 h 42.31836 l 63.47657,-119.89844 -12.92188,-99.0625 99.84375,77.9043 -21.16016,134.00391 40.03125,-13.72461 21.15821,-134.00391 -56.05469,-92.5957 c 4.422,-12.2715 6.68359,-25.21817 6.68359,-38.26368 0,-27.67349 -10.16681,-54.38528 -28.57031,-75.05078 l 10.25977,-10.26367 c 8.598,-8.5965 20.26047,-13.42578 32.41797,-13.42578 22.269,0 41.31325,16.00059 45.15625,37.93359 l 11.26562,64.33204 52.89844,-28.21094 -13.47852,-50.16992 c -9.933,-36.9735 -43.45033,-62.67578 -81.73633,-62.67578 -22.446,-10e-6 -43.9742,8.9156 -59.8457,24.7871 l -18.75586,18.75586 c -18.507,-12.2985 -40.23453,-18.85937 -62.45703,-18.85937 -6.864,0 -13.7168,0.62805 -20.4668,1.87305 l -0.48437,0.0859 c -37.0155,8.2065 -74.81406,12.34766 -112.72656,12.34766 -24.2505,0 -48.47133,-1.69336 -72.48633,-5.06836 l -70.17578,-110.25 c -25.9605,-40.3455 -70.64525,-64.73047 -118.6211,-64.73047 z"
+           transform="matrix(6.6666667,0,0,-6.6666667,8.332,4732.71)"
+           id="path2997"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+  </g>
+</svg>
