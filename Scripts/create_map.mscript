@@ -1,0 +1,2 @@
+run-script file=Scripts/render.mscript
+export-svg zoom=17 compatibility=inkscape

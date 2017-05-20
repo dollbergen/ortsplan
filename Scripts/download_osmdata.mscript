@@ -1,0 +1,3 @@
+run-script file=Scripts/set_bounds.mscript
+download-osm-overpass
+save-source index=1 file=data/dollbergen.osm

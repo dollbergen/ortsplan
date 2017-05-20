@@ -1,0 +1,5 @@
+run-script file=Scripts/set_bounds.mscript
+load-source data/dollbergen.osm
+use-ruleset location=Rules/Dollbergen.mrules as-alias=dollbergen
+apply-ruleset
+export-svg zoom=17 compatibility=inkscape
