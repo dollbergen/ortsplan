@@ -28,7 +28,7 @@ features
 		bus stop : highway=bus_stop
 		railway station : railway=station
 		mini roundabout : highway=mini_roundabout
-		gate : barrier=gate
+		//gate : barrier=gate
 		tourism viewpoint : tourism=viewpoint
 		tourism hotel : tourism=hotel
 		tourism museum : tourism=museum
@@ -41,7 +41,10 @@ features
 		memorial : historic=memorial
 		highway cul-de-sac : highway=turning_circle
 		bbq: amenity=bbq
+		restaurant : amenity=restaurant
 		riding arena : leisure=pitch AND sport=equestrian
+		tennis court : leisure=pitch AND sport=tennis
+		soccer : leisure=pitch AND sport=soccer
 
 
 
@@ -96,7 +99,7 @@ features
 		railway rail : railway=rail
 		railway lightrail : railway=light_rail
 		platform : railway=platform OR public_transport=platform
-		line barrier : barrier=wall OR barrier=fence
+		//line barrier : barrier=wall OR barrier=fence
 		highway motorway : highway=motorway OR (highway=construction AND construction=motorway)
 		highway motorway link : highway=motorway_link OR (highway=construction AND construction=motorway_link)
 		highway trunk : highway=trunk OR (highway=construction AND construction=trunk)
@@ -157,7 +160,6 @@ features
 		convenience : shop=convenience
 		bakery : shop=bakery
 		beauty : shop=beauty
-		restaurant : amenity=restaurant
 		cafe : amenity=cafe
 		pharmacy : amenity=pharmacy
 		peak : natural=peak
@@ -315,7 +317,7 @@ rules
 			placement-value : 0.05
 		draw : text
 		define
-			icon-image : icons/Dollbergen/playground.png
+			icon-image : icons/Dollbergen/png/playground.png
 			min-zoom : 15
 			icon-width : 40
 		draw : icon
@@ -325,7 +327,27 @@ rules
 			line-width : 1
 		draw : line
 		define
-			icon-image : icons/Dollbergen/ridingarena.png
+			icon-image : icons/Dollbergen/png/horse.png
+			min-zoom : 15
+			icon-width : 40
+		draw : icon
+	target : tennis court
+		define
+			line-color : #75664F
+			line-width : 1
+		draw : line
+		define
+			icon-image : icons/Dollbergen/png/tennis.png
+			min-zoom : 15
+			icon-width : 15
+		draw : icon
+	target : soccer
+		define
+			line-color : #75664F
+			line-width : 1
+		draw : line
+		define
+			icon-image : icons/Dollbergen/png/soccer.png
 			min-zoom : 15
 			icon-width : 40
 		draw : icon
@@ -345,7 +367,7 @@ rules
 			text-offset-vertical : 150%
 		draw : text
 		define
-			icon-image : icons/Dollbergen/recycling.png
+			icon-image : icons/Dollbergen/png/recycling.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
@@ -1143,19 +1165,19 @@ rules
 
 	target: parking
 		define
-			icon-image : icons/Dollbergen/parking.png
+			icon-image : icons/Dollbergen/png/parking-car.png
 			min-zoom : 15
 			icon-width : 16
 		draw : icon
 	target: parking bicycle
 		define
-			icon-image : icons/Dollbergen/parking_bicycle.png
+			icon-image : icons/Dollbergen/png/parking-bicycle.png
 			min-zoom : 15
 			icon-width : 40
 		draw : icon
 	target: bus stop
 		define
-			icon-image : icons/Dollbergen/bus_stop.png
+			icon-image : icons/Dollbergen/png/bus-stop.png
 			min-zoom : 15
 			icon-width : 40
 		draw : icon
@@ -1175,26 +1197,26 @@ rules
 		//draw : text
 	target: postbox
 		define
-			icon-image : icons/Dollbergen/post_box.png
+			icon-image : icons/Dollbergen/png/post.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
 	target: postoffice
 		define
-			icon-image : icons/Dollbergen/post_office.png
+			icon-image : icons/Dollbergen/png/post.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
 	target: telephone
 		define
-			icon-image : icons/Dollbergen/telephone.png
+			icon-image : icons/Dollbergen/png/telephone.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
 
 	target: fire station
 		define
-			icon-image : icons/Dollbergen/firestation.png
+			icon-image : icons/Dollbergen/png/fire-station.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
@@ -1217,21 +1239,32 @@ rules
 		draw : icon
 	target: cafe
 		define
-			icon-image : icons/Dollbergen/cafe.png
+			icon-image : icons/Dollbergen/png/cafe.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
 	target: bbq
 		define
-			icon-image : icons/Dollbergen/bbq.png
+			min-zoom : 17
+			text-color : #2B80FE
+			text-offset-vertical : 150%
+		draw : text
+		define
+			icon-image : icons/Dollbergen/png/bbq.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
+		define
+			min-zoom : 17
+			text-color : #AA33AA
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
 	target: bench
 		define
-			icon-image : icons/Dollbergen/bench.png
+			icon-image : icons/Dollbergen/png/bench.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 20
 		draw : icon
 	target: supermarket
 		define
@@ -1247,7 +1280,7 @@ rules
 		draw : icon
 	target: convenience
 		define
-			icon-image : icons/Dollbergen/convenience.png
+			icon-image : icons/Dollbergen/png/convenience.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
@@ -1260,7 +1293,7 @@ rules
 		draw : icon
 	target: church
 		define
-			icon-image : icons/Dollbergen/church.png
+			icon-image : icons/Dollbergen/png/church.png
 			min-zoom : 16
 			icon-width : 40
 		define
@@ -1280,7 +1313,7 @@ rules
 			text-offset-vertical : 150%
 		draw : text
 		define
-			icon-image : icons/Dollbergen/bank.png
+			icon-image : icons/Dollbergen/png/money.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
@@ -1303,13 +1336,13 @@ rules
 			font-size : 10
 		draw : text
 		define
-			icon-image : icons/Dollbergen/restaurant.png
+			icon-image : icons/Dollbergen/png/restaurant.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
 	target: hair dresser
 		define
-			icon-image : icons/Dollbergen/hairdresser.png
+			icon-image : icons/Dollbergen/png/hairdresser.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
@@ -1328,7 +1361,7 @@ rules
 		draw : icon
 	target: library
 		define
-			icon-image : icons/Dollbergen/library.png
+			icon-image : icons/Dollbergen/png/library.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
@@ -1356,7 +1389,7 @@ rules
 			text-offset-vertical : 150%
 		draw : text
 		define
-			icon-image : icons/Dollbergen/beauty.png
+			icon-image : icons/Dollbergen/png/beauty.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
@@ -1368,7 +1401,7 @@ rules
 		draw : text
 	target: tree
 		define
-			icon-image : icons/Dollbergen/tree.png
+			icon-image : icons/Dollbergen/png/tree.png
 			min-zoom : 16
 			icon-width : 6
 		draw : icon
@@ -1396,7 +1429,7 @@ rules
 
 	target : gate
 		define
-			icon-image : icons/Dollbergen/barrier_gate.png
+			icon-image : icons/Dollbergen/png/gate.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
