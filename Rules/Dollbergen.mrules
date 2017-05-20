@@ -45,6 +45,7 @@ features
 		riding arena : leisure=pitch AND sport=equestrian
 		tennis court : leisure=pitch AND sport=tennis
 		soccer : leisure=pitch AND sport=soccer
+		doctor : amenity=doctors
 
 
 
@@ -172,8 +173,8 @@ features
 		bench : amenity=bench
 
 		gps waypoints : gpswaypoint[]
-		gps trackpoints: gpstrack[].gpspoint[]
-		gps routepoints: gpsroute[].gpspoint[]
+		//gps trackpoints: gpstrack[].gpspoint[]
+		//gps routepoints: gpsroute[].gpspoint[]
 
 properties
 	map-background-color	: #F1EEE8
@@ -193,7 +194,7 @@ properties
 rules
 	target: gps tracks
 		define
-			line-color : red
+			line-color : blue
 			line-opacity : 0.75
 			min-zoom : 5
 			line-width : 5
@@ -434,7 +435,8 @@ rules
 				fill-color : #CFECA8
 		elseif : graveyard
 			define
-				fill-color : #A9CAAE
+				fill-texture : Textures/png/graveyard.png
+				fill-color : #00FF00
 		elseif : building
 			define
 				fill-color : #BCA9A9
@@ -1337,6 +1339,18 @@ rules
 		draw : text
 		define
 			icon-image : icons/Dollbergen/png/restaurant.png
+			min-zoom : 16
+			icon-width : 40
+		draw : icon
+	target: doctor
+		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
+		define
+			icon-image : icons/Dollbergen/png/doctor.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
