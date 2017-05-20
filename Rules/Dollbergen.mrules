@@ -1280,7 +1280,7 @@ rules
 		draw : icon
 	target: convenience
 		define
-			icon-image : icons/Dollbergen/png/convenience.png
+			icon-image : icons/Dollbergen/png/supermarket.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
