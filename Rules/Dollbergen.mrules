@@ -46,6 +46,8 @@ features
 		tennis court : leisure=pitch AND sport=tennis
 		soccer : leisure=pitch AND sport=soccer
 		doctor : amenity=doctors
+		kiosk : shop=kiosk
+		windmill : man_made=windmill
 
 
 
@@ -67,6 +69,7 @@ features
 		national park : boundary=national_park
 		allotments : landuse=allotments
 		academic : node[@isOneOf(amenity, university, college, school)] area[@isOneOf(amenity, university, college, school)]
+		streuobstwiese : landuse=meadow AND meadow=orchard
 		meadow : natural=meadow OR landuse=meadow
 		nature reserve : leisure=nature_reserve
 		playground : leisure=playground
@@ -437,6 +440,9 @@ rules
 			define
 				fill-texture : Textures/png/graveyard.png
 				fill-color : #00FF00
+		elseif : streuobstwiese
+			define
+				fill-texture : Textures/png/orchard.png
 		elseif : building
 			define
 				fill-color : #BCA9A9
@@ -1360,6 +1366,18 @@ rules
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
+	target: kiosk
+		define
+			icon-image : icons/Dollbergen/png/news.png
+			min-zoom : 16
+			icon-width : 40
+		draw : icon
+	target: windmill
+		define
+			icon-image : icons/Dollbergen/png/windmill.png
+			min-zoom : 16
+			icon-width : 40
+		draw : icon
 
 	target: toilets
 		define
@@ -1417,7 +1435,7 @@ rules
 		define
 			icon-image : icons/Dollbergen/png/tree.png
 			min-zoom : 16
-			icon-width : 6
+			icon-width : 12
 		draw : icon
 	target: memorial
 		define
