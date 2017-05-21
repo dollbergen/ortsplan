@@ -46,6 +46,7 @@ features
 		tennis court : leisure=pitch AND sport=tennis
 		soccer : leisure=pitch AND sport=soccer
 		doctor : amenity=doctors
+		healthcare : healthcare
 		kiosk : shop=kiosk
 		windmill : man_made=windmill
 
@@ -381,6 +382,20 @@ rules
 			text-offset-vertical : 150%
 			font-size : 10
 		draw : text
+	target : graveyard
+		define
+			fill-texture : Textures/png/graveyard.png
+		draw : fill
+		define
+			min-zoom : 17
+			text-color : #AA33AA
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
+	target : streuobstwiese
+		define
+			fill-texture : Textures/png/orchard.png
+		draw : fill
 	target : $featuretype(area)
 		define
 			line-style : none
@@ -424,6 +439,7 @@ rules
 		elseif : meadow
 			define
 				fill-color : #CFECA8
+				line-style : none
 		elseif : nature reserve
 			define
 				fill-color : #ABDE96
@@ -436,13 +452,6 @@ rules
 		elseif : leisure garden
 			define
 				fill-color : #CFECA8
-		elseif : graveyard
-			define
-				fill-texture : Textures/png/graveyard.png
-				fill-color : #00FF00
-		elseif : streuobstwiese
-			define
-				fill-texture : Textures/png/orchard.png
 		elseif : building
 			define
 				fill-color : #BCA9A9
@@ -1360,18 +1369,42 @@ rules
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
+	target: healthcare
+		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
+		define
+			icon-image : icons/Dollbergen/png/snakelogo.png
+			min-zoom : 16
+			icon-width : 40
+		draw : icon
 	target: hair dresser
 		define
 			icon-image : icons/Dollbergen/png/hairdresser.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
+		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
 	target: kiosk
 		define
 			icon-image : icons/Dollbergen/png/news.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
+		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
 	target: windmill
 		define
 			icon-image : icons/Dollbergen/png/windmill.png
