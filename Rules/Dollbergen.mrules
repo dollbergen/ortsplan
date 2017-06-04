@@ -1,14 +1,14 @@
-// Default rendering rules for Maperitive resembling that of OSM Mapnik
-// http://maperitive.net
-
 // Created by Igor Brejc
 // Released under the Creative Commons Attribution-ShareAlike 3.0 License (http://creativecommons.org/licenses/by-sa/3.0/)
 // Updates by Michael <quelbs_at_gmail.com>
+// Updates by Sven Klomp <mail@klomp.eu>
+
 // Icons used: Map icons CC-0 from SJJB Management (http://www.sjjb.co.uk/mapicons)
+// Additional icons: CC-0 from different sources (detailed licence information in files) 
 
 features
 	points, areas
-		parking : amenity=parking
+		parking : amenity=parking AND NOT (access=no OR access=customers)
 		parking bicycle : amenity=bicycle_parking
 		postbox : amenity=post_box
 		postoffice : amenity=post_office
@@ -71,7 +71,7 @@ features
 		allotments : landuse=allotments
 		academic : node[@isOneOf(amenity, university, college, school)] area[@isOneOf(amenity, university, college, school)]
 		streuobstwiese : landuse=meadow AND meadow=orchard
-		meadow : natural=meadow OR landuse=meadow
+		meadow : (natural=meadow OR landuse=meadow) AND NOT meadow=orchard
 		nature reserve : leisure=nature_reserve
 		playground : leisure=playground
 		car park: amenity=parking
@@ -92,6 +92,13 @@ features
 		orchard : landuse=orchard
 		farmland : landuse=farmland
 		quarry : landuse=quarry
+		drawname : building=yes AND sport=horse_racing
+		drawname : building=yes AND sport=tennis
+		drawname : building=yes AND amenity=school
+		drawname : building=industrial AND name=GROKA
+		drawname : building=industrial AND name="Kartoffel Deyerling"
+		drawname : landuse=industrial
+
 
 	lines
 		oneway : oneway=yes OR oneway=true OR oneway=-1
@@ -174,7 +181,7 @@ features
 		lift_gate : barrier=lift_gate
 		aerialway station : aerialway=station
 		motorway_junction : highway=motorway_junction
-		bench : amenity=bench
+		bench : amenity=bench OR leisure=picnic_table
 
 		gps waypoints : gpswaypoint[]
 		//gps trackpoints: gpstrack[].gpspoint[]
@@ -194,6 +201,9 @@ properties
 	font-stretch : 0.9
 	map.rendering.lflp.min-buffer-space : 5
 	map.rendering.lflp.max-allowed-corner-angle : 40
+
+
+
 
 rules
 	target: gps tracks
@@ -310,7 +320,7 @@ rules
 		draw : text
 	target : playground
 		define
-			fill-color : #CCFEF0
+			fill-color : #C8FFC8
 			line-style : none
 		draw : fill
 		define
@@ -324,7 +334,7 @@ rules
 		define
 			icon-image : icons/Dollbergen/png/playground.png
 			min-zoom : 15
-			icon-width : 40
+			icon-width : 32
 		draw : icon
 	target : riding arena
 		define
@@ -334,7 +344,7 @@ rules
 		define
 			icon-image : icons/Dollbergen/png/horse.png
 			min-zoom : 15
-			icon-width : 40
+			icon-width : 32
 		draw : icon
 	target : tennis court
 		define
@@ -348,15 +358,27 @@ rules
 		draw : icon
 	target : soccer
 		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
+		define
 			line-color : #75664F
 			line-width : 1
 		draw : line
 		define
 			icon-image : icons/Dollbergen/png/soccer.png
 			min-zoom : 15
-			icon-width : 40
+			icon-width : 32
 		draw : icon
 	target: recycling
+		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
 		define
 			min-zoom : 10
 			fill-color : #CCCCCC
@@ -367,32 +389,32 @@ rules
 			line-width : 1
 		draw : line
 		define
-			min-zoom : 17
-			text-color : #2B80FE
-			text-offset-vertical : 150%
-		draw : text
-		define
 			icon-image : icons/Dollbergen/png/recycling.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
+	target : graveyard
+		define
+			line-style : none
+			line-width : 1
 		define
 			min-zoom : 17
-			text-color : #AA33AA
+			text-color : #734a08
 			text-offset-vertical : 150%
 			font-size : 10
 		draw : text
-	target : graveyard
 		define
 			fill-texture : Textures/png/graveyard.png
 		draw : fill
+	target : streuobstwiese
+		define
+			line-style : none
+			line-width : 1
 		define
 			min-zoom : 17
-			text-color : #AA33AA
-			text-offset-vertical : 150%
+			text-color : #734a08
 			font-size : 10
 		draw : text
-	target : streuobstwiese
 		define
 			fill-texture : Textures/png/orchard.png
 		draw : fill
@@ -400,7 +422,9 @@ rules
 		define
 			line-style : none
 			line-width : 1
-		if : forest
+		if : meadow=orchard
+			stop
+		elseif : forest
 			define
 				min-zoom : 9
 				fill-color : #8DC56C
@@ -444,6 +468,9 @@ rules
 			define
 				fill-color : #ABDE96
 		elseif : car park
+			define
+				fill-color : #F6EEB7
+		elseif : parking bicycle
 			define
 				fill-color : #F6EEB7
 		elseif : park
@@ -531,11 +558,14 @@ rules
 		if:academic
 			define
 				min-zoom:16
+
+	target : drawname
+		define
+			min-zoom : 17
+			text-color : #734a08
+			font-size : 10
 		draw : text
 
-//		aeroway taxiway : aeroway=taxiway
-//		aeroway apron : aeroway=apron
-//		aeroway terminal : aeroway=terminal
 
 	target : aeroway runway
 		define
@@ -1190,13 +1220,13 @@ rules
 		define
 			icon-image : icons/Dollbergen/png/parking-bicycle.png
 			min-zoom : 15
-			icon-width : 40
+			icon-width : 20
 		draw : icon
 	target: bus stop
 		define
 			icon-image : icons/Dollbergen/png/bus-stop.png
 			min-zoom : 15
-			icon-width : 40
+			icon-width : 32
 		draw : icon
 	target: railway station
 		define
@@ -1216,26 +1246,32 @@ rules
 		define
 			icon-image : icons/Dollbergen/png/post.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
 	target: postoffice
 		define
 			icon-image : icons/Dollbergen/png/post.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
 	target: telephone
 		define
 			icon-image : icons/Dollbergen/png/telephone.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
 
 	target: fire station
 		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 200%
+			font-size : 10
+		draw : text
+		define
 			icon-image : icons/Dollbergen/png/fire-station.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 36
 		draw : icon
 	target: hospital
 		define
@@ -1256,27 +1292,28 @@ rules
 		draw : icon
 	target: cafe
 		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
+		define
 			icon-image : icons/Dollbergen/png/cafe.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
 	target: bbq
 		define
 			min-zoom : 17
-			text-color : #2B80FE
+			text-color : #734a08
 			text-offset-vertical : 150%
+			font-size : 10
 		draw : text
 		define
 			icon-image : icons/Dollbergen/png/bbq.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
-		define
-			min-zoom : 17
-			text-color : #AA33AA
-			text-offset-vertical : 150%
-			font-size : 10
-		draw : text
 	target: bench
 		define
 			icon-image : icons/Dollbergen/png/bench.png
@@ -1284,6 +1321,12 @@ rules
 			icon-width : 20
 		draw : icon
 	target: supermarket
+		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
 		define
 			icon-image : icons/SJJB/png/shopping_supermarket.p.32.png
 			min-zoom : 16
@@ -1297,9 +1340,15 @@ rules
 		draw : icon
 	target: convenience
 		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
+		define
 			icon-image : icons/Dollbergen/png/supermarket.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
 
 	target: mini roundabout
@@ -1310,12 +1359,15 @@ rules
 		draw : icon
 	target: church
 		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
+		define
 			icon-image : icons/Dollbergen/png/church.png
 			min-zoom : 16
 			icon-width : 40
-		define
-			text-offset-vertical : 150%
-		draw : text
 		draw : icon
 	target: drinking water
 		define
@@ -1326,13 +1378,14 @@ rules
 	target: bank
 		define
 			min-zoom : 17
-			text-color : #000000
+			text-color : #734a08
 			text-offset-vertical : 150%
+			font-size : 10
 		draw : text
 		define
 			icon-image : icons/Dollbergen/png/money.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
 	target: atm
 		define
@@ -1355,19 +1408,19 @@ rules
 		define
 			icon-image : icons/Dollbergen/png/restaurant.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
 	target: doctor
 		define
 			min-zoom : 17
 			text-color : #734a08
-			text-offset-vertical : 150%
+			text-offset-vertical : 250%
 			font-size : 10
 		draw : text
 		define
 			icon-image : icons/Dollbergen/png/doctor.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
 	target: healthcare
 		define
@@ -1379,32 +1432,32 @@ rules
 		define
 			icon-image : icons/Dollbergen/png/snakelogo.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
 	target: hair dresser
 		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
+		define
 			icon-image : icons/Dollbergen/png/hairdresser.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
+	target: kiosk
 		define
 			min-zoom : 17
 			text-color : #734a08
 			text-offset-vertical : 150%
 			font-size : 10
 		draw : text
-	target: kiosk
 		define
 			icon-image : icons/Dollbergen/png/news.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
-		define
-			min-zoom : 17
-			text-color : #734a08
-			text-offset-vertical : 150%
-			font-size : 10
-		draw : text
 	target: windmill
 		define
 			icon-image : icons/Dollbergen/png/windmill.png
@@ -1425,6 +1478,12 @@ rules
 			icon-width : 16
 		draw : icon
 	target: library
+		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
 		define
 			icon-image : icons/Dollbergen/png/library.png
 			min-zoom : 16
@@ -1450,20 +1509,15 @@ rules
 	target: beauty
 		define
 			min-zoom : 17
-			text-color : #2B80FE
+			text-color : #734a08
 			text-offset-vertical : 150%
+			font-size : 10
 		draw : text
 		define
 			icon-image : icons/Dollbergen/png/beauty.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
-		define
-			min-zoom : 17
-			text-color : #AA33AA
-			text-offset-vertical : 150%
-			font-size : 10
-		draw : text
 	target: tree
 		define
 			icon-image : icons/Dollbergen/png/tree.png
@@ -1496,7 +1550,7 @@ rules
 		define
 			icon-image : icons/Dollbergen/png/gate.png
 			min-zoom : 16
-			icon-width : 40
+			icon-width : 32
 		draw : icon
 
 	target : tourism*
