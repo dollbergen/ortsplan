@@ -44,6 +44,7 @@ features
 		restaurant : amenity=restaurant
 		riding arena : leisure=pitch AND sport=equestrian
 		tennis court : leisure=pitch AND sport=tennis
+		boules court : leisure=pitch AND sport=boules
 		soccer : leisure=pitch AND sport=soccer
 		doctor : amenity=doctors
 		healthcare : healthcare
@@ -353,6 +354,16 @@ rules
 		draw : line
 		define
 			icon-image : icons/Dollbergen/png/tennis.png
+			min-zoom : 15
+			icon-width : 15
+		draw : icon
+	target : boules court
+		define
+			line-color : #75664F
+			line-width : 1
+		draw : line
+		define
+			icon-image : icons/Dollbergen/png/boules.png
 			min-zoom : 15
 			icon-width : 15
 		draw : icon
@@ -768,7 +779,7 @@ rules
 
 	target : highway*
 		define
-			font-size : 15:7;17:16;18:10
+			font-size : 15:7;17:7.8;18:6
 			font-weight : bold
 
 		for : oneway=yes OR oneway=true
