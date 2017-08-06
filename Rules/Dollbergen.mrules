@@ -1411,12 +1411,6 @@ rules
 		draw : icon
 	target: restaurant
 		define
-			min-zoom : 17
-			text-color : #734a08
-			text-offset-vertical : 150%
-			font-size : 10
-		draw : text
-		define
 			icon-image : icons/Dollbergen/png/restaurant.png
 			min-zoom : 16
 			icon-width : 32
