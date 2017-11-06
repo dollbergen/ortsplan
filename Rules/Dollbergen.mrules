@@ -32,6 +32,7 @@ features
 		tourism viewpoint : tourism=viewpoint
 		tourism hotel : tourism=hotel
 		tourism museum : tourism=museum
+		tourism information : tourism=information
 		amenity pub : amenity=pub
 		amenity fast_food : amenity=fast_food
 		aerodrome : aeroway=aerodrome
@@ -1588,6 +1589,11 @@ rules
 		elseif : *museum
 			define
 				icon-image : icons/SJJB/png/tourist_museum.p.32.png
+				min-zoom : 16
+				icon-width : 16
+		elseif : *information
+			define
+				icon-image : icons/Dollbergen/png/information.png
 				min-zoom : 16
 				icon-width : 16
 		else
