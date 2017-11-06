@@ -125,13 +125,13 @@ features
 		highway residential : highway=residential OR (highway=construction AND construction=residential)
 		highway living_street : highway=living_street OR (highway=construction AND construction=living_street)
 		highway construction : highway=construction
-		highway service : highway=service
+		highway service : highway=service AND NOT access=private
 		highway pedestrian : highway=pedestrian
 		highway track : highway=track
 		highway footway : highway=footway
 		highway footway : highway=cycleway
 		highway path : highway=path
-		highway access private : access=private AND highway
+		privatehighway : access=private AND highway
 		highway access destination : access=destination AND highway
 		highway steps : highway=steps
 		pier : man_made=pier
@@ -491,8 +491,7 @@ rules
 			define
 				fill-color : #CFECA8
 		elseif : building
-			define
-				fill-color : #BCA9A9
+			stop
 		elseif : leisure pitch
 			define
 				fill-color : #89D2AE
@@ -779,7 +778,7 @@ rules
 
 	target : highway*
 		define
-			font-size : 15:7;17:7.8;18:6
+			font-size : 15:7;17:16;18:10
 			font-weight : bold
 
 		for : oneway=yes OR oneway=true
@@ -1059,7 +1058,17 @@ rules
 					border-opacity : 1
 			draw : line
 			draw : text
-		elseif : *access*
+		elseif : *access destination
+			define
+				min-zoom : 13
+				line-width : 13:1;15:2;18:4
+				line-style : dash
+				line-color : #F7D4D4
+			for : access=destination
+				define
+					line-color : lightblue white 50%
+			draw : line
+		elseif : *private
 			define
 				min-zoom : 13
 				line-width : 13:1;15:2;18:4
@@ -1350,12 +1359,12 @@ rules
 			icon-width : 16
 		draw : icon
 	target: convenience
-		define
-			min-zoom : 17
-			text-color : #734a08
-			text-offset-vertical : 150%
-			font-size : 10
-		draw : text
+// 		define
+// 			min-zoom : 17
+// 			text-color : #734a08
+// 			text-offset-vertical : 150%
+// 			font-size : 10
+// 		draw : text
 		define
 			icon-image : icons/Dollbergen/png/supermarket.png
 			min-zoom : 16
@@ -1387,23 +1396,23 @@ rules
 			icon-width : 16
 		draw : icon
 	target: bank
-		define
-			min-zoom : 17
-			text-color : #734a08
-			text-offset-vertical : 150%
-			font-size : 10
-		draw : text
+// 		define
+// 			min-zoom : 17
+// 			text-color : #734a08
+// 			text-offset-vertical : 150%
+// 			font-size : 10
+// 		draw : text
 		define
 			icon-image : icons/Dollbergen/png/money.png
 			min-zoom : 16
 			icon-width : 32
 		draw : icon
 	target: atm
-		define
-			min-zoom : 17
-			text-color : #000000
-			text-offset-vertical : 150%
-		draw : text
+// 		define
+// 			min-zoom : 17
+// 			text-color : #000000
+// 			text-offset-vertical : 150%
+// 		draw : text
 		define
 			icon-image : icons/SJJB/png/money_atm2.p.32.png
 			min-zoom : 16
@@ -1416,48 +1425,48 @@ rules
 			icon-width : 32
 		draw : icon
 	target: doctor
-		define
-			min-zoom : 17
-			text-color : #734a08
-			text-offset-vertical : 250%
-			font-size : 10
-		draw : text
+// 		define
+// 			min-zoom : 17
+// 			text-color : #734a08
+// 			text-offset-vertical : 250%
+// 			font-size : 10
+// 		draw : text
 		define
 			icon-image : icons/Dollbergen/png/doctor.png
 			min-zoom : 16
 			icon-width : 32
 		draw : icon
 	target: healthcare
-		define
-			min-zoom : 17
-			text-color : #734a08
-			text-offset-vertical : 150%
-			font-size : 10
-		draw : text
+// 		define
+// 			min-zoom : 17
+// 			text-color : #734a08
+// 			text-offset-vertical : 150%
+// 			font-size : 10
+// 		draw : text
 		define
 			icon-image : icons/Dollbergen/png/snakelogo.png
 			min-zoom : 16
 			icon-width : 32
 		draw : icon
 	target: hair dresser
-		define
-			min-zoom : 17
-			text-color : #734a08
-			text-offset-vertical : 150%
-			font-size : 10
-		draw : text
+// 		define
+// 			min-zoom : 17
+// 			text-color : #734a08
+// 			text-offset-vertical : 150%
+// 			font-size : 10
+// 		draw : text
 		define
 			icon-image : icons/Dollbergen/png/hairdresser.png
 			min-zoom : 16
 			icon-width : 32
 		draw : icon
 	target: kiosk
-		define
-			min-zoom : 17
-			text-color : #734a08
-			text-offset-vertical : 150%
-			font-size : 10
-		draw : text
+// 		define
+// 			min-zoom : 17
+// 			text-color : #734a08
+// 			text-offset-vertical : 150%
+// 			font-size : 10
+// 		draw : text
 		define
 			icon-image : icons/Dollbergen/png/news.png
 			min-zoom : 16
@@ -1512,12 +1521,12 @@ rules
 			font-size : 10
 		draw : text
 	target: beauty
-		define
-			min-zoom : 17
-			text-color : #734a08
-			text-offset-vertical : 150%
-			font-size : 10
-		draw : text
+// 		define
+// 			min-zoom : 17
+// 			text-color : #734a08
+// 			text-offset-vertical : 150%
+// 			font-size : 10
+// 		draw : text
 		define
 			icon-image : icons/Dollbergen/png/beauty.png
 			min-zoom : 16
