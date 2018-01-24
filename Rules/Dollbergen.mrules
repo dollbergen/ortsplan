@@ -17,7 +17,7 @@ features
 		police station : amenity=police
 		hospital : amenity=hospital
 		recycling : amenity=recycling
-		church : amenity=place_of_worship AND religion=christian
+		church interest: amenity=place_of_worship AND religion=christian AND general_interest=yes
 		drinking water : amenity=drinking_water
 		bank : amenity=bank
 		atm : amenity=atm
@@ -32,18 +32,20 @@ features
 		tourism viewpoint : tourism=viewpoint
 		tourism hotel : tourism=hotel
 		tourism museum : tourism=museum
-		tourism information : tourism=information
+		tourism information : tourism=information AND NOT description="Dorferlebnispfad Dollbergen"
+		dorferlebnispfad : tourism=information AND description="Dorferlebnispfad Dollbergen"
 		amenity pub : amenity=pub
 		amenity fast_food : amenity=fast_food
 		aerodrome : aeroway=aerodrome
 		//housenumber : [addr:housenumber]
 	// These are not shown on Mapnik
 		puffin : crossing_ref=puffin
-		memorial : historic=memorial
+		memorial interest : historic=memorial AND general_interest=yes
 		highway cul-de-sac : highway=turning_circle
-		bbq: amenity=bbq
+		bbq: amenity=bbq AND not general_interest=yes
+		bbq interest: amenity=bbq AND general_interest=yes
 		restaurant : amenity=restaurant
-		riding arena : leisure=pitch AND sport=equestrian
+		riding arena : leisure=pitch AND sport=equestrian AND NOT access=private
 		tennis court : leisure=pitch AND sport=tennis
 		boules court : leisure=pitch AND sport=boules
 		soccer : leisure=pitch AND sport=soccer
@@ -51,6 +53,7 @@ features
 		healthcare : healthcare
 		kiosk : shop=kiosk
 		windmill : man_made=windmill
+		wastewaterplant : man_made=wastewater_plant
 
 
 
@@ -82,7 +85,7 @@ features
 		military : landuse=military OR military=barracks
 		park : leisure=park
 		leisure garden : leisure=garden
-		leisure pitch : leisure=pitch
+		leisure pitch : leisure=pitch AND NOT access=private
 		leisure stadium : leisure=stadium
 		landuse retail : landuse=retail
 		landuse industrial : landuse=industrial
@@ -126,7 +129,7 @@ features
 		highway residential : highway=residential OR (highway=construction AND construction=residential)
 		highway living_street : highway=living_street OR (highway=construction AND construction=living_street)
 		highway construction : highway=construction
-		highway service : highway=service AND NOT access=private
+		highway service : highway=service AND NOT (access=private OR access=no)
 		highway pedestrian : highway=pedestrian
 		highway track : highway=track
 		highway footway : highway=footway
@@ -152,7 +155,8 @@ features
 		contour major : contour[@isMulti(elevation, 100)]
 		contour minor : contour[@isMulti(elevation, 20) and not @isMulti(elevation, 100)]
 
-		gps tracks : gpstrack[]
+		dorferlebnispfad : gpstrack[name=Dorferlebnispfad]
+		hauptstrasse : gpstrack[name=Hauptstrasse]
 		gps routes : gpsroute[]
 
 // Routes
@@ -208,12 +212,20 @@ properties
 
 
 rules
-	target: gps tracks
+	target: dorferlebnispfad
 		define
-			line-color : blue
+			line-color : #c82828
 			line-opacity : 0.75
+			line-style : dash
 			min-zoom : 5
 			line-width : 5
+		draw : line
+	target: hauptstrasse
+		define
+			line-color : #000000
+			line-opacity : 0.75
+			min-zoom : 5
+			line-width : 2
 		draw : line
 
 	target: gps routes
@@ -1195,9 +1207,10 @@ rules
 		draw : line
 		define
 			min-zoom:13
-			font-size:13:8;16:12
-			text-color:#B5D0D0
-			font-weight:normal
+			max-zoom:20
+			font-size:13:8;16:12;18:24
+			text-color:#FFFFFF
+			font-weight:bold
 		draw:text
 	target : stream
 		define
@@ -1335,6 +1348,18 @@ rules
 			min-zoom : 16
 			icon-width : 32
 		draw : icon
+	target: bbq interest
+		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
+		define
+			icon-image : icons/Dollbergen/png/bbq_red.png
+			min-zoom : 16
+			icon-width : 32
+		draw : icon
 	target: bench
 		define
 			icon-image : icons/Dollbergen/png/bench.png
@@ -1378,7 +1403,7 @@ rules
 			min-zoom : 16
 			icon-width : 9
 		draw : icon
-	target: church
+	target: church interest
 		define
 			min-zoom : 17
 			text-color : #734a08
@@ -1386,7 +1411,7 @@ rules
 			font-size : 10
 		draw : text
 		define
-			icon-image : icons/Dollbergen/png/church.png
+			icon-image : icons/Dollbergen/png/church_red.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
@@ -1479,6 +1504,13 @@ rules
 			min-zoom : 16
 			icon-width : 40
 		draw : icon
+	target: wastewaterplant
+		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
 
 	target: toilets
 		define
@@ -1539,11 +1571,16 @@ rules
 			min-zoom : 16
 			icon-width : 12
 		draw : icon
-	target: memorial
+	target: memorial interest
 		define
-			icon-image : icons/SJJB/png/tourist_memorial.p.32.png
+			min-zoom : 17
+			text-color : #2B80FE
+			text-offset-vertical : 150%
+		draw : text
+		define
+			icon-image : icons/Dollbergen/png/memorial_red.png
 			min-zoom : 16
-			icon-width : 16
+			icon-width : 32
 		draw : icon
 	target: school
 		define
@@ -1600,6 +1637,18 @@ rules
 			stop
 		draw : icon
 
+	target : dorferlebnispfad
+		define
+			min-zoom : 17
+			text-color : #2B80FE
+			text-offset-vertical : 150%
+		draw : text
+		define
+			icon-image : icons/Dollbergen/png/dorferlebnispfad.png
+			min-zoom : 16
+			icon-width : 32
+		draw : icon
+		
 	target : amenity*
 		define
 			min-zoom : 17

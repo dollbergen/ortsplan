@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="15"
+   height="15"
+   viewBox="0 0 15 15"
+   id="Layer_1"
+   sodipodi:docname="bbq_red.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="703"
+     inkscape:window-height="480"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="15.733333"
+     inkscape:cx="7.5"
+     inkscape:cy="7.5"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1" />
+  <title
+     id="title4">grill-15</title>
+  <defs
+     id="defs10" />
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>grill-15</dc:title>
+        <cc:license
+           resource="https://creativecommons.org/publicdomain/zero/1.0/" />
+        <cc:attributionURL
+           resource="https://github.com/mapbox/maki/blob/master/icons/bbq-15.svg" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="M 4.75,1 C 4.6119,1 4.5,1.1119 4.5,1.25 4.5,1.75 4,1.75 4,1.75 c -1,0 -1,1 -1,1 C 3,2.8881 3.1119,3 3.25,3 3.3881,3 3.5,2.8881 3.5,2.75 3.5,2.25 4,2.25 4,2.25 c 1,0 1,-1 1,-1 C 5,1.1119 4.8881,1 4.75,1 z m 2,0 C 6.6119,1 6.5,1.1119 6.5,1.25 6.5,1.75 6,1.75 6,1.75 c -1,0 -1,1 -1,1 C 5,2.8881 5.1119,3 5.25,3 5.3881,3 5.5,2.8881 5.5,2.75 5.5,2.25 6,2.25 6,2.25 c 1,0 1,-1 1,-1 C 7,1.1119 6.8881,1 6.75,1 z m 2,0 C 8.6119,1 8.5,1.1119 8.5,1.25 8.5,1.75 8,1.75 8,1.75 c -1,0 -1,1 -1,1 C 7,2.8881 7.1119,3 7.25,3 7.3881,3 7.5,2.8881 7.5,2.75 7.5,2.25 8,2.25 8,2.25 c 1,0 1,-1 1,-1 C 9,1.1119 8.8881,1 8.75,1 z m 2,0 c -0.1381,0 -0.25,0.1119 -0.25,0.25 0,0.5 -0.5,0.5 -0.5,0.5 -1,0 -1,1 -1,1 C 9,2.8881 9.1119,3 9.25,3 9.3881,3 9.5,2.8881 9.5,2.75 c 0,-0.5 0.5,-0.5 0.5,-0.5 1,0 1,-1 1,-1 C 11,1.1119 10.8881,1 10.75,1 z m 2,0 c -0.1381,0 -0.25,0.1119 -0.25,0.25 0,0.5 -0.5,0.5 -0.5,0.5 -1,0 -1,1 -1,1 0,0.1381 0.1119,0.25 0.25,0.25 0.1381,0 0.25,-0.1119 0.25,-0.25 0,-0.5 0.5,-0.5 0.5,-0.5 1,0 1,-1 1,-1 C 13,1.1119 12.8881,1 12.75,1 z M 3,4 C 3.053,5.6299 4.0928,7.0668 5.625,7.625 4.7185424,9.5544599 3.7927871,11.581898 3,13.28125 2.8835,13.53115 2.96905,13.820499 3.21875,13.9375 3.28505,13.9687 3.3642,14.000299 3.4375,14 3.6301,14.0006 3.7914,13.89225 3.875,13.71875 L 4.21875,13 7,13 l 0.8125,0 2.90625,0 0.34375,0.71875 C 11.1461,13.89225 11.3074,14.0006 11.5,14 c 0.0733,3e-4 0.15245,-0.0313 0.21875,-0.0625 0.2497,-0.117 0.33525,-0.40635 0.21875,-0.65625 l -2.625,-5.625 C 10.8707,7.10925 11.9471,5.6506 12,4 z m 3.59375,3.9375 c 0.577,0.1042 1.173,0.1042 1.75,0 L 10.25,12 7.8125,12 7,12 4.6875,12 C 5.3556304,10.566674 6.0040427,9.1773442 6.59375,7.9375 z"
+     id="path6"
+     style="fill:#c82828;fill-opacity:1" />
+</svg>
