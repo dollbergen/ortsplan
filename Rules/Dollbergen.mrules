@@ -18,6 +18,7 @@ features
 		hospital : amenity=hospital
 		recycling : amenity=recycling
 		church interest: amenity=place_of_worship AND religion=christian AND general_interest=yes
+		Blaues Haus: name="Blaues Haus"
 		drinking water : amenity=drinking_water
 		bank : amenity=bank
 		atm : amenity=atm
@@ -131,7 +132,7 @@ features
 		highway construction : highway=construction
 		highway service : highway=service AND NOT (access=private OR access=no)
 		highway pedestrian : highway=pedestrian
-		highway track : highway=track
+		highway track : highway=track AND NOT (access=private OR access=no)
 		highway footway : highway=footway
 		highway footway : highway=cycleway
 		highway path : highway=path
@@ -148,14 +149,14 @@ features
 		aeroway runway : aeroway=runway
 		aeroway taxiway : aeroway=taxiway
 
-		boundary country : boundary=administrative AND (admin_level=2 OR admin_level=4) AND NOT natural=coastline
-		boundary province : boundary=administrative AND admin_level=6
-		boundary municipal : boundary=administrative AND admin_level=8
+		//boundary country : boundary=administrative AND (admin_level=2 OR admin_level=4) AND NOT natural=coastline
+		//boundary province : boundary=administrative AND admin_level=6
+		//boundary municipal : boundary=administrative AND admin_level=8
 
 		contour major : contour[@isMulti(elevation, 100)]
 		contour minor : contour[@isMulti(elevation, 20) and not @isMulti(elevation, 100)]
 
-		dorferlebnispfad : gpstrack[name=Dorferlebnispfad]
+		dorferlebnispfad_track : gpstrack[name=Dorferlebnispfad]
 		hauptstrasse : gpstrack[name=Hauptstrasse]
 		gps routes : gpsroute[]
 
@@ -205,14 +206,16 @@ properties
 	text-align-horizontal : center
 	text-align-vertical : center
 	font-stretch : 0.9
-	map.rendering.lflp.min-buffer-space : 5
+	map.rendering.lflp.min-buffer-space : 0
 	map.rendering.lflp.max-allowed-corner-angle : 40
+	map.rendering.lflp.max-compression : 0.5
+	map.decoration.grid : false
 
 
 
 
 rules
-	target: dorferlebnispfad
+	target: dorferlebnispfad_track
 		define
 			line-color : #c82828
 			line-opacity : 0.75
@@ -222,8 +225,8 @@ rules
 		draw : line
 	target: hauptstrasse
 		define
-			line-color : #000000
-			line-opacity : 0.75
+			line-color : #ffffff
+			line-opacity : 1
 			min-zoom : 5
 			line-width : 2
 		draw : line
@@ -1412,6 +1415,18 @@ rules
 		draw : text
 		define
 			icon-image : icons/Dollbergen/png/church_red.png
+			min-zoom : 16
+			icon-width : 40
+		draw : icon
+	target: Blaues Haus
+		define
+			min-zoom : 17
+			text-color : #734a08
+			text-offset-vertical : 150%
+			font-size : 10
+		draw : text
+		define
+			icon-image : icons/Dollbergen/png/BlauesHaus.png
 			min-zoom : 16
 			icon-width : 40
 		draw : icon

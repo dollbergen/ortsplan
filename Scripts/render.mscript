@@ -3,4 +3,6 @@ load-source data/dollbergen.osm
 load-source data/dorferlebnispfad.gpx
 use-ruleset location=Rules/Dollbergen.mrules as-alias=dollbergen
 apply-ruleset
-export-svg zoom=17 compatibility=inkscape
+set-setting name=map.decoration.grid value=false
+set-setting name=map.decoration.scale value=false
+set-setting name=map.decoration.attribution value=false
