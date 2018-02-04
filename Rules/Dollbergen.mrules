@@ -25,7 +25,8 @@ features
 		toilets : amenity=toilets
 		library : amenity=library
 		tree : natural=tree
-	//	school : amenity=school
+		school : amenity=school
+		kindergarten : amenity=kindergarten
 		bus stop : highway=bus_stop
 		railway station : railway=station
 		mini roundabout : highway=mini_roundabout
@@ -100,7 +101,6 @@ features
 		quarry : landuse=quarry
 		drawname : building=yes AND sport=horse_racing
 		drawname : building=yes AND sport=tennis
-		drawname : building=yes AND amenity=school
 		drawname : building=industrial AND name=GROKA
 		drawname : building=industrial AND name="Kartoffel Deyerling"
 		drawname : landuse=industrial
@@ -1287,7 +1287,7 @@ rules
 		draw : icon
 	target: postoffice
 		define
-			icon-image : icons/Dollbergen/png/post.png
+			icon-image : icons/Dollbergen/png/deutschepost.png
 			min-zoom : 16
 			icon-width : 32
 		draw : icon
@@ -1541,12 +1541,6 @@ rules
 		draw : icon
 	target: library
 		define
-			min-zoom : 17
-			text-color : #734a08
-			text-offset-vertical : 150%
-			font-size : 10
-		draw : text
-		define
 			icon-image : icons/Dollbergen/png/library.png
 			min-zoom : 16
 			icon-width : 40
@@ -1599,13 +1593,16 @@ rules
 		draw : icon
 	target: school
 		define
-			icon-image : icons/SJJB/png/education_school.p.32.png
+			icon-image : icons/Dollbergen/png/school.png
 			min-zoom : 16
-			icon-width : 16
+			icon-width : 32
 		draw : icon
+	target: kindergarten
 		define
-			text-offset-vertical : 150%
-		draw : text
+			icon-image : icons/Dollbergen/png/teddy.png
+			min-zoom : 16
+			icon-width : 32
+		draw : icon
 	target : puffin
 		define
 			icon-image : icons/SJJB/png/transport_traffic_lights.p.32.png
