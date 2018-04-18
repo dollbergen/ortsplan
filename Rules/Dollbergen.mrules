@@ -11,7 +11,8 @@ features
 		parking : amenity=parking AND NOT (access=no OR access=customers)
 		parking bicycle : amenity=bicycle_parking
 		postbox : amenity=post_box
-		postoffice : amenity=post_office
+		postoffice : amenity=post_office AND NOT operator="Deutsche Post"
+		deutschepost : amenity=post_office AND operator="Deutsche Post"
 		telephone : amenity=telephone
 		fire station : amenity=fire_station
 		police station : amenity=police
@@ -47,7 +48,7 @@ features
 		bbq: amenity=bbq AND not general_interest=yes
 		bbq interest: amenity=bbq AND general_interest=yes
 		restaurant : amenity=restaurant
-		riding arena : leisure=pitch AND sport=equestrian AND NOT access=private
+		riding arena : amenity=stable
 		tennis court : leisure=pitch AND sport=tennis
 		boules court : leisure=pitch AND sport=boules
 		soccer : leisure=pitch AND sport=soccer
@@ -101,6 +102,7 @@ features
 		quarry : landuse=quarry
 		drawname : building=yes AND sport=horse_racing
 		drawname : building=yes AND sport=tennis
+		drawname : building=yes AND sport=soccer
 		drawname : building=industrial AND name=GROKA
 		drawname : building=industrial AND name="Kartoffel Deyerling"
 		drawname : landuse=industrial
@@ -128,11 +130,13 @@ features
 		highway tertiary : highway=tertiary OR (highway=construction AND construction=tertiary)
 		highway unclassified : highway=unclassified OR (highway=construction AND construction=unclassified)
 		highway residential : highway=residential OR (highway=construction AND construction=residential)
-		highway living_street : highway=living_street OR (highway=construction AND construction=living_street)
+		highway residential : highway=living_street OR (highway=construction AND construction=living_street)
+		highway residential : highway=proposed AND proposed=residential
 		highway construction : highway=construction
 		highway service : highway=service AND NOT (access=private OR access=no)
 		highway pedestrian : highway=pedestrian
 		highway track : highway=track AND NOT (access=private OR access=no)
+		highway track : highway=proposed AND proposed=track AND NOT (access=private OR access=no)
 		highway footway : highway=footway
 		highway footway : highway=cycleway
 		highway path : highway=path
@@ -228,7 +232,7 @@ rules
 			line-color : #ffffff
 			line-opacity : 1
 			min-zoom : 5
-			line-width : 2
+			line-width : 4
 		draw : line
 
 	target: gps routes
@@ -355,9 +359,9 @@ rules
 		draw : icon
 	target : riding arena
 		define
-			line-color : #75664F
-			line-width : 1
-		draw : line
+			line-style: none
+			fill-color : #89d2ae
+		draw : fill
 		define
 			icon-image : icons/Dollbergen/png/horse.png
 			min-zoom : 15
@@ -915,6 +919,7 @@ rules
 				border-style : none
 			draw : line
 			define
+				text : @if(name, name " (" ref ")"  , ref)
 				min-zoom : 13
 				max-zoom : 20
 			draw : text
@@ -940,6 +945,7 @@ rules
 				border-style : none
 			draw : line
 			define
+				text : @if(name, name " (" ref ")"  , ref)
 				min-zoom : 15
 				max-zoom : 20
 			draw : text
@@ -1286,6 +1292,12 @@ rules
 			icon-width : 32
 		draw : icon
 	target: postoffice
+		define
+			icon-image : icons/Dollbergen/png/deutschepost.png
+			min-zoom : 16
+			icon-width : 32
+		draw : icon
+	target: deutschepost
 		define
 			icon-image : icons/Dollbergen/png/deutschepost.png
 			min-zoom : 16
