@@ -8,61 +8,61 @@
 
 features
 	points, areas
-		parking : amenity=parking AND NOT (access=no OR access=customers)
-		parking bicycle : amenity=bicycle_parking
-		postbox : amenity=post_box
-		postoffice : amenity=post_office AND NOT operator="Deutsche Post"
-		deutschepost : amenity=post_office AND operator="Deutsche Post"
-		telephone : amenity=telephone
-		fire station : amenity=fire_station
-		police station : amenity=police
-		hospital : amenity=hospital
-		recycling : amenity=recycling
-		church interest: amenity=place_of_worship AND religion=christian AND general_interest=yes
-		Blaues Haus: name="Blaues Haus"
-		drinking water : amenity=drinking_water
-		bank : amenity=bank
-		atm : amenity=atm
-		toilets : amenity=toilets
-		library : amenity=library
-		tree : natural=tree
-		school : amenity=school
-		kindergarten : amenity=kindergarten
-		bus stop : highway=bus_stop
-		railway station : railway=station
-		mini roundabout : highway=mini_roundabout
+// 		parking : amenity=parking AND NOT (access=no OR access=customers)
+// 		parking bicycle : amenity=bicycle_parking
+// 		postbox : amenity=post_box
+// 		postoffice : amenity=post_office AND NOT operator="Deutsche Post"
+// 		deutschepost : amenity=post_office AND operator="Deutsche Post"
+// 		telephone : amenity=telephone
+// 		fire station : amenity=fire_station
+// 		police station : amenity=police
+// 		hospital : amenity=hospital
+// 		recycling : amenity=recycling
+// 		church interest: amenity=place_of_worship AND religion=christian AND general_interest=yes
+// 		Blaues Haus: name="Blaues Haus"
+// 		drinking water : amenity=drinking_water
+// 		bank : amenity=bank
+// 		atm : amenity=atm
+// 		toilets : amenity=toilets
+// 		library : amenity=library
+// 		tree : natural=tree
+// 		school : amenity=school
+// 		kindergarten : amenity=kindergarten
+// 		bus stop : highway=bus_stop
+// 		railway station : railway=station
+// 		mini roundabout : highway=mini_roundabout
 		//gate : barrier=gate
-		tourism viewpoint : tourism=viewpoint
-		tourism hotel : tourism=hotel
-		tourism museum : tourism=museum
-		tourism information : tourism=information AND NOT description="Dorferlebnispfad Dollbergen"
-		dorferlebnispfad : tourism=information AND description="Dorferlebnispfad Dollbergen"
-		amenity pub : amenity=pub
-		amenity fast_food : amenity=fast_food
-		aerodrome : aeroway=aerodrome
+// 		tourism viewpoint : tourism=viewpoint
+// 		tourism hotel : tourism=hotel
+// 		tourism museum : tourism=museum
+// 		tourism information : tourism=information AND NOT description="Dorferlebnispfad Dollbergen"
+// 		dorferlebnispfad : tourism=information AND description="Dorferlebnispfad Dollbergen"
+// 		amenity pub : amenity=pub
+// 		amenity fast_food : amenity=fast_food
+// 		aerodrome : aeroway=aerodrome
 		//housenumber : [addr:housenumber]
 	// These are not shown on Mapnik
-		puffin : crossing_ref=puffin
-		memorial interest : historic=memorial AND general_interest=yes
-		highway cul-de-sac : highway=turning_circle
-		bbq: amenity=bbq AND not general_interest=yes
-		bbq interest: amenity=bbq AND general_interest=yes
-		restaurant : amenity=restaurant
-		riding arena : amenity=stable
-		tennis court : leisure=pitch AND sport=tennis
-		boules court : leisure=pitch AND sport=boules
-		soccer : leisure=pitch AND sport=soccer
-		doctor : amenity=doctors
-		healthcare : healthcare
-		kiosk : shop=kiosk
-		windmill : man_made=windmill
-		wastewaterplant : man_made=wastewater_plant
+// 		puffin : crossing_ref=puffin
+// 		memorial interest : historic=memorial AND general_interest=yes
+// 		highway cul-de-sac : highway=turning_circle
+// 		bbq: amenity=bbq AND not general_interest=yes
+// 		bbq interest: amenity=bbq AND general_interest=yes
+// 		restaurant : amenity=restaurant
+// 		riding arena : amenity=stable
+// 		tennis court : leisure=pitch AND sport=tennis
+// 		boules court : leisure=pitch AND sport=boules
+// 		soccer : leisure=pitch AND sport=soccer
+// 		doctor : amenity=doctors
+// 		healthcare : healthcare
+// 		kiosk : shop=kiosk
+// 		windmill : man_made=windmill
+// 		wastewaterplant : man_made=wastewater_plant
 
 
 
 
 	areas
-		beach : natural=beach
+// 		beach : natural=beach
 		building : building=yes
 		building : building=residential
 		building : building=transportation
@@ -78,18 +78,18 @@ features
 		national park : boundary=national_park
 		allotments : landuse=allotments
 		academic : node[@isOneOf(amenity, university, college, school)] area[@isOneOf(amenity, university, college, school)]
-		streuobstwiese : landuse=meadow AND meadow=orchard
-		meadow : (natural=meadow OR landuse=meadow) AND NOT meadow=orchard
+// 		streuobstwiese : landuse=meadow AND meadow=orchard
+// 		meadow : (natural=meadow OR landuse=meadow) AND NOT meadow=orchard
 		nature reserve : leisure=nature_reserve
-		playground : leisure=playground
-		car park: amenity=parking
+// 		playground : leisure=playground
+// 		car park: amenity=parking
 		track : leisure=track
-		graveyard : amenity=grave_yard OR landuse=cemetery
+// 		graveyard : amenity=grave_yard OR landuse=cemetery
 		military : landuse=military OR military=barracks
 		park : leisure=park
-		leisure garden : leisure=garden
-		leisure pitch : leisure=pitch AND NOT access=private
-		leisure stadium : leisure=stadium
+// 		leisure garden : leisure=garden
+// 		leisure pitch : leisure=pitch AND NOT access=private
+// 		leisure stadium : leisure=stadium
 		landuse retail : landuse=retail
 		landuse industrial : landuse=industrial
 		commercial area : landuse=commercial
@@ -160,9 +160,11 @@ features
 		contour major : contour[@isMulti(elevation, 100)]
 		contour minor : contour[@isMulti(elevation, 20) and not @isMulti(elevation, 100)]
 
-		dorferlebnispfad_track : gpstrack[name=Dorferlebnispfad]
-		hauptstrasse : gpstrack[name=Hauptstrasse]
-		gps routes : gpsroute[]
+		flohmarkt_track : gpstrack[name=Flohmarkt]
+
+// 		dorferlebnispfad_track : gpstrack[name=Dorferlebnispfad]
+// 		hauptstrasse : gpstrack[name=Hauptstrasse]
+// 		gps routes : gpsroute[]
 
 // Routes
 //		route ncn : relation[type=route AND route=bicycle AND network=ncn]
@@ -170,31 +172,34 @@ features
 		route foot : relation[type=route AND route=foot]
 
 	points
-		place city : place=city
-		place town : place=town
+// 		place city : place=city
+// 		place town : place=town
 		//place village : place=village
-		place hamlet : place=hamlet
-		place locality: place=locality
-		place isolated_dwelling : place=isolated_dwelling
-		place suburb : place=suburb
-		diy : shop=doityourself
-		hair dresser : shop=hairdresser
-		supermarket : shop=supermarket
-		convenience : shop=convenience
-		bakery : shop=bakery
-		beauty : shop=beauty
-		cafe : amenity=cafe
-		pharmacy : amenity=pharmacy
-		peak : natural=peak
+// 		place hamlet : place=hamlet
+// 		place locality: place=locality
+// 		place isolated_dwelling : place=isolated_dwelling
+// 		place suburb : place=suburb
+// 		diy : shop=doityourself
+// 		hair dresser : shop=hairdresser
+// 		supermarket : shop=supermarket
+// 		convenience : shop=convenience
+// 		bakery : shop=bakery
+// 		beauty : shop=beauty
+// 		cafe : amenity=cafe
+// 		pharmacy : amenity=pharmacy
+// 		peak : natural=peak
 		//powertower : power=tower OR power=pole
-		info : information=guidepost
-		bollard : barrier=bollard
-		lift_gate : barrier=lift_gate
-		aerialway station : aerialway=station
-		motorway_junction : highway=motorway_junction
-		bench : amenity=bench OR leisure=picnic_table
+// 		info : information=guidepost
+// 		bollard : barrier=bollard
+// 		lift_gate : barrier=lift_gate
+// 		aerialway station : aerialway=station
+// 		motorway_junction : highway=motorway_junction
+// 		bench : amenity=bench OR leisure=picnic_table
 
-		gps waypoints : gpswaypoint[]
+ 		cafe : gpswaypoint[name="Kaffee und Kuchen"]
+ 		flohmarkt : gpswaypoint[NOT name="Parkplatz" AND NOT name="Kaffee und Kuchen"]
+ 		parking : gpswaypoint[name="Parkplatz"]
+
 		//gps trackpoints: gpstrack[].gpspoint[]
 		//gps routepoints: gpsroute[].gpspoint[]
 
@@ -429,25 +434,14 @@ rules
 			line-style : none
 			line-width : 1
 		define
-			min-zoom : 17
-			text-color : #734a08
-			text-offset-vertical : 150%
-			font-size : 10
-		draw : text
-		define
-			fill-texture : Textures/png/graveyard.png
+			fill-texture : icons/Dollbergen/png/graveyard.png
 		draw : fill
 	target : streuobstwiese
 		define
 			line-style : none
 			line-width : 1
 		define
-			min-zoom : 17
-			text-color : #734a08
-			font-size : 10
-		draw : text
-		define
-			fill-texture : Textures/png/orchard.png
+			fill-texture : icons/Dollbergen/png/orchard.png
 		draw : fill
 	target : $featuretype(area)
 		define
@@ -798,7 +792,7 @@ rules
 
 	target : highway*
 		define
-			font-size : 15:7;17:16;18:10
+			font-size : 15:5;17:5
 			font-weight : bold
 
 		for : oneway=yes OR oneway=true
@@ -1256,7 +1250,7 @@ rules
 	target: parking
 		define
 			icon-image : icons/Dollbergen/png/parking-car.png
-			min-zoom : 15
+			min-zoom : 10
 			icon-width : 16
 		draw : icon
 	target: parking bicycle
@@ -1348,8 +1342,29 @@ rules
 		draw : text
 		define
 			icon-image : icons/Dollbergen/png/cafe.png
-			min-zoom : 16
-			icon-width : 32
+			min-zoom : 10
+			icon-width : 16
+		draw : icon
+	target: dorferlebnispfad_track
+		define
+			line-color : #c82828
+			line-opacity : 0.75
+			line-style : dash
+			min-zoom : 5
+			line-width : 5
+		draw : line
+	target: flohmarkt_track
+		define
+			line-color : #ff0000
+			line-opacity : 0.65
+			line-width : 8
+			curved : true
+		draw : line
+	target: flohmarkt
+		define
+			icon-image : icons/Dollbergen/png/flohmarkt.png
+			min-zoom : 10
+			icon-width : 24
 		draw : icon
 	target: bbq
 		define
