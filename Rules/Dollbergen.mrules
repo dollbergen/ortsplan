@@ -160,7 +160,7 @@ features
 		contour major : contour[@isMulti(elevation, 100)]
 		contour minor : contour[@isMulti(elevation, 20) and not @isMulti(elevation, 100)]
 
-		flohmarkt_track : gpstrack[name=Flohmarkt]
+		flohmarkt_track : gpstrack[]
 
 // 		dorferlebnispfad_track : gpstrack[name=Dorferlebnispfad]
 // 		hauptstrasse : gpstrack[name=Hauptstrasse]
@@ -1356,7 +1356,7 @@ rules
 	target: flohmarkt_track
 		define
 			line-color : #ff0000
-			line-opacity : 0.65
+			line-opacity : 1.0
 			line-width : 8
 			curved : true
 		draw : line
