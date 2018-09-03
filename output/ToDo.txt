@@ -1,71 +1,8 @@
 Handarbeit
 ==========
 
-* Fuhsering zentrieren
-* Ein Busstop an der Schule entfernen
-* TSV auseinanderziehen
-* Telefon und Briefkasten an Berliner Allee auseinander ziehen
-* 2x Berliner Allee entfernen
-* Sandkamp zentrieren
 * Birkenweg aufräumen
-* Bahnhofstraße bei Umgehung entfernen
-* Ortsplan entfernen
-* Busstop bei Feuerwehr zusammenführen
 * Im Heesters entfernen
 * Heisterbusch und Pommernweg von Fahrradweg entfernen
-* Text Bahnhofstraße beim Kiosk verschieben
-* Briefkasten und Kiosk und Bushaltestelle auseinander ziehen
-* Deutsche Post löschen 
-* Im Dubenthal entfernen
-* Druffelkamp etwas verschieben
 * 1x Moorblick entfernen
-* Kleiner Moorweg verschieben und den Vordergrund und entfernen
-* Großer Moorweg verschieben
-* Blause Haus und Kindergarten auseinander
-* Gustav-Hennigs-Str entfernen
-* Tafel 11 verschieben
 * Dorfplatz entfernen
-* Supermarkt und Briefkasten auseinander ziehen
-* L387 ausdünnen
-
-* PNGs durch SVGs ersetzen
-  * Streuobstwiese Pattern
-  * Friedhof Pattern
-  * Icons
-    * 1x BBQ
-    * 1x BBQ red
-    * 1x Beauty
-    * 7x Bank
-    * 1x Blaues Haus
-    * 1x Boules
-    * 8x Bus Stop
-    * 1x Kirche
-    * 1x Deutsche Post
-    * 1x Doctor
-    * 18x Tafel
-    * 1x Fire Station
-    * 2x Hairdresser
-    * 2x Horse
-    * 2x Information
-    * 1x Library
-    * 1x Memorial
-    * 1x Money
-    * 1x News
-    * 1x Parking Bycicle
-    * 5x Parken
-    * 4x Playground
-    * 3x Post
-    * 2x Recycling
-    * 4x Restaurant
-    * 1x School
-    * 1x Snake
-    * 1x Soccer
-    * 1x Supermarket
-    * 2x Teddy
-    * 1x Telephone
-    * 4x Tennis
-    * 5x Tree
-    * 1x Windmill
-
-* Standort verschieben
-* Fuhse benamen
