@@ -196,9 +196,9 @@ features
 // 		motorway_junction : highway=motorway_junction
 // 		bench : amenity=bench OR leisure=picnic_table
 
- 		cafe : gpswaypoint[name="Kaffee und Kuchen"]
- 		flohmarkt : gpswaypoint[NOT name="Parkplatz" AND NOT name="Kaffee und Kuchen"]
- 		parking : gpswaypoint[name="Parkplatz"]
+ 		//cafe : gpswaypoint[name="Kaffee und Kuchen"]
+ 		flohmarkt : gpswaypoint[]
+ 		//parking : gpswaypoint[name="Parkplatz"]
 
 		//gps trackpoints: gpstrack[].gpspoint[]
 		//gps routepoints: gpsroute[].gpspoint[]

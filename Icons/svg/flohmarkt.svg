@@ -15,7 +15,7 @@
    viewBox="0 0 14 14"
    id="svg2"
    sodipodi:docname="flohmarkt.svg"
-   inkscape:version="0.92.2 2405546, 2018-03-11">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -30,8 +30,8 @@
      id="namedview7"
      showgrid="false"
      inkscape:zoom="16.857143"
-     inkscape:cx="7.8601695"
-     inkscape:cy="7"
+     inkscape:cx="-3.3813559"
+     inkscape:cy="7.0000001"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            resource="https://creativecommons.org/publicdomain/zero/1.0/" />
         <cc:attributionURL
@@ -62,7 +62,7 @@
      id="canvas"
      style="fill:none;stroke:none;visibility:hidden" />
   <path
-     style="opacity:1;fill:#de3636;fill-opacity:0.78431373;stroke:none;stroke-width:1.88976383;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:0.78431373;stroke:#000000;stroke-width:1.88976383;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="path4517"
      sodipodi:type="arc"
      sodipodi:cx="7.0296607"
@@ -73,4 +73,14 @@
      sodipodi:end="6.2652593"
      d="M 12.029661,6.9703388 A 5,5 0 0 1 7.0520681,11.970289 5,5 0 0 1 2.0298615,7.0151532 5,5 0 0 1 6.9624402,1.9707907 5,5 0 0 1 12.028857,6.8807136"
      sodipodi:open="true" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 3.0847458,3.7372881 10.974576,10.20339"
+     id="path816"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 10.974576,3.7372881 3.0847458,10.20339"
+     id="path816-3"
+     inkscape:connector-curvature="0" />
 </svg>

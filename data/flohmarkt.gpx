@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <gpx version="1.1" creator="GDAL 2.2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogr="http://osgeo.org/gdal" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-<trk><name>Bahnhofstraße</name><desc>@id=way/23351306
+<wpt lat="52.40435311209464" lon="10.174037218093872"><name>Flyer</name><desc>name=Flyer</desc></wpt><wpt lat="52.40513856529368" lon="10.179345309734344"><name>Kaffee und Kuchen</name><desc>name=Kaffee und Kuchen</desc></wpt><trk><name>Bahnhofstraße</name><desc>@id=way/23351306
 highway=tertiary
 name=Bahnhofstraße
 postal_code=31311
-ref=K 141</desc><trkseg><trkpt lat="52.4160586" lon="10.1789018"/><trkpt lat="52.4153295" lon="10.1785808"/><trkpt lat="52.4149907" lon="10.1784436"/><trkpt lat="52.4148338" lon="10.1783801"/><trkpt lat="52.4147661" lon="10.1783527"/><trkpt lat="52.4145925" lon="10.1782824"/><trkpt lat="52.4142018" lon="10.1781243"/><trkpt lat="52.4136632" lon="10.1779063"/><trkpt lat="52.4128521" lon="10.1775349"/><trkpt lat="52.4126196" lon="10.1774371"/><trkpt lat="52.412364" lon="10.1773295"/><trkpt lat="52.4107198" lon="10.176637"/><trkpt lat="52.4104605" lon="10.1765278"/><trkpt lat="52.4102371" lon="10.1764338"/><trkpt lat="52.4101418" lon="10.1763937"/><trkpt lat="52.4100589" lon="10.1763589"/><trkpt lat="52.4100011" lon="10.1762953"/><trkpt lat="52.409965" lon="10.1762366"/><trkpt lat="52.4099415" lon="10.1761502"/></trkseg></trk><trk><name>Pröbenweg</name><desc>@id=way/23361743
+ref=K 141</desc><trkseg><trkpt lat="52.4153295" lon="10.1785808"/><trkpt lat="52.4149907" lon="10.1784436"/><trkpt lat="52.4148338" lon="10.1783801"/><trkpt lat="52.4147661" lon="10.1783527"/><trkpt lat="52.4145925" lon="10.1782824"/><trkpt lat="52.4142018" lon="10.1781243"/><trkpt lat="52.4136632" lon="10.1779063"/><trkpt lat="52.4128521" lon="10.1775349"/></trkseg></trk><trk><name>Pröbenweg</name><desc>@id=way/23361743
 highway=residential
 maxspeed=30
 name=Pröbenweg
@@ -13,41 +13,22 @@ postal_code=31311
 surface=asphalt</desc><trkseg><trkpt lat="52.4102001" lon="10.1718264"/><trkpt lat="52.4099335" lon="10.1736589"/><trkpt lat="52.4096291" lon="10.175784"/><trkpt lat="52.4096075" lon="10.1759183"/><trkpt lat="52.4095646" lon="10.1761378"/></trkseg></trk><trk><name>Fuhsestraße</name><desc>@id=way/23361747
 highway=residential
 name=Fuhsestraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4095646" lon="10.1761378"/><trkpt lat="52.4095205" lon="10.1763017"/><trkpt lat="52.4092256" lon="10.1773099"/><trkpt lat="52.4091043" lon="10.1777381"/><trkpt lat="52.4088875" lon="10.1785174"/><trkpt lat="52.4086151" lon="10.1794744"/><trkpt lat="52.4084019" lon="10.1802906"/></trkseg></trk><trk><name>Ackersbergstraße</name><desc>@id=way/23361751
-highway=residential
-name=Ackersbergstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4081968" lon="10.1810577"/><trkpt lat="52.4083276" lon="10.1811492"/><trkpt lat="52.4090767" lon="10.1814842"/></trkseg></trk><trk><name>Wilhelm-Busch-Straße</name><desc>@id=way/23655578
+postal_code=31311</desc><trkseg><trkpt lat="52.4092256" lon="10.1773099"/><trkpt lat="52.4091043" lon="10.1777381"/><trkpt lat="52.409041078510235" lon="10.17797201871872"/></trkseg></trk><trk><name>Wilhelm-Busch-Straße</name><desc>@id=way/23655578
 highway=residential
 name=Wilhelm-Busch-Straße
-postal_code=31311</desc><trkseg><trkpt lat="52.4054508" lon="10.1796282"/><trkpt lat="52.407216" lon="10.1804104"/><trkpt lat="52.4082602" lon="10.180839"/></trkseg></trk><trk><name>An der Masch</name><desc>@id=way/25759764
+postal_code=31311</desc><trkseg><trkpt lat="52.40573091866445" lon="10.179750323295593"/><trkpt lat="52.407442480670575" lon="10.180506706237791"/></trkseg></trk><trk><name>An der Masch</name><desc>@id=way/25759764
 highway=residential
 name=An der Masch
-postal_code=31311</desc><trkseg><trkpt lat="52.4066386" lon="10.1862485"/><trkpt lat="52.4065483" lon="10.1863864"/><trkpt lat="52.4064831" lon="10.1865554"/><trkpt lat="52.4064478" lon="10.1867522"/><trkpt lat="52.406428" lon="10.1869919"/><trkpt lat="52.4064433" lon="10.1878318"/><trkpt lat="52.4066149" lon="10.1881224"/><trkpt lat="52.4067417" lon="10.1884426"/><trkpt lat="52.4068172" lon="10.1887156"/><trkpt lat="52.4068698" lon="10.188982"/><trkpt lat="52.406899" lon="10.1892306"/><trkpt lat="52.4069493" lon="10.1905724"/></trkseg></trk><trk><name>Bahnhofstraße</name><desc>@id=way/26487711
-highway=residential
-name=Bahnhofstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4215465" lon="10.1806468"/><trkpt lat="52.4214507" lon="10.1808437"/><trkpt lat="52.4213852" lon="10.1809604"/><trkpt lat="52.4213183" lon="10.1810321"/><trkpt lat="52.4212577" lon="10.1810704"/><trkpt lat="52.4211669" lon="10.1810704"/><trkpt lat="52.4210532" lon="10.1810368"/><trkpt lat="52.4202926" lon="10.1807143"/><trkpt lat="52.4193029" lon="10.1802905"/><trkpt lat="52.4173287" lon="10.1794414"/><trkpt lat="52.4170846" lon="10.179346"/><trkpt lat="52.4170148" lon="10.1793064"/><trkpt lat="52.4169442" lon="10.1792505"/><trkpt lat="52.4169253" lon="10.1792971"/><trkpt lat="52.4169011" lon="10.179325"/><trkpt lat="52.4168704" lon="10.1793378"/><trkpt lat="52.4168348" lon="10.1793291"/><trkpt lat="52.4168043" lon="10.1792966"/><trkpt lat="52.4167833" lon="10.1792394"/><trkpt lat="52.4167814" lon="10.1791693"/><trkpt lat="52.4167975" lon="10.1791121"/><trkpt lat="52.4168232" lon="10.1790759"/><trkpt lat="52.4168542" lon="10.1790591"/><trkpt lat="52.4168877" lon="10.1790631"/><trkpt lat="52.4169146" lon="10.1790842"/><trkpt lat="52.4169358" lon="10.179124"/><trkpt lat="52.416949" lon="10.1791735"/><trkpt lat="52.4169442" lon="10.1792505"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/34161774
-bicycle=designated
-foot=designated
-highway=living_street
-name=Im Heesters
-postal_code=31311
-surface=paving_stones</desc><trkseg><trkpt lat="52.4073963" lon="10.1766155"/><trkpt lat="52.4072808" lon="10.1763968"/><trkpt lat="52.4072514" lon="10.1763561"/><trkpt lat="52.4072262" lon="10.1763365"/><trkpt lat="52.4069429" lon="10.1762304"/></trkseg></trk><trk><name>Moorblick</name><desc>@id=way/34161856
+postal_code=31311</desc><trkseg><trkpt lat="52.4064478" lon="10.1867522"/><trkpt lat="52.406428" lon="10.1869919"/><trkpt lat="52.4064433" lon="10.1878318"/></trkseg></trk><trk><name>Moorblick</name><desc>@id=way/34161856
 highway=living_street
 name=Moorblick
-postal_code=31311</desc><trkseg><trkpt lat="52.4048792" lon="10.1753051"/><trkpt lat="52.4048426" lon="10.1756055"/><trkpt lat="52.4051349" lon="10.1757234"/><trkpt lat="52.4058541" lon="10.1760326"/></trkseg></trk><trk><name>Moorblick</name><desc>@id=way/34161858
+postal_code=31311</desc><trkseg><trkpt lat="52.4051349" lon="10.1757234"/><trkpt lat="52.4058541" lon="10.1760326"/></trkseg></trk><trk><name>Moorblick</name><desc>@id=way/34161858
 highway=living_street
 name=Moorblick
-postal_code=31311</desc><trkseg><trkpt lat="52.4052458" lon="10.175039"/><trkpt lat="52.4051349" lon="10.1757234"/></trkseg></trk><trk><name>Kapellenweg</name><desc>@id=way/34169516
-highway=residential
-name=Kapellenweg
-postal_code=31311</desc><trkseg><trkpt lat="52.4064434" lon="10.186269"/><trkpt lat="52.4064101" lon="10.1860307"/><trkpt lat="52.406301" lon="10.1855897"/></trkseg></trk><trk><name>Hermann-Löns-Straße</name><desc>@id=way/34169566
+postal_code=31311</desc><trkseg><trkpt lat="52.4052458" lon="10.175039"/><trkpt lat="52.4051349" lon="10.1757234"/></trkseg></trk><trk><name>Hermann-Löns-Straße</name><desc>@id=way/34169566
 highway=residential
 name=Hermann-Löns-Straße
-postal_code=31311</desc><trkseg><trkpt lat="52.4056322" lon="10.1780605"/><trkpt lat="52.406516" lon="10.1783546"/><trkpt lat="52.4065397" lon="10.1783745"/><trkpt lat="52.4065552" lon="10.1784067"/><trkpt lat="52.4065962" lon="10.1785178"/><trkpt lat="52.4066387" lon="10.1786213"/><trkpt lat="52.4066559" lon="10.1786494"/><trkpt lat="52.4066781" lon="10.1786707"/><trkpt lat="52.4074174" lon="10.1789846"/><trkpt lat="52.4086151" lon="10.1794744"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/34169576
-highway=living_street
-name=Im Heesters
-oneway=no
-surface=paving_stones</desc><trkseg><trkpt lat="52.4084421" lon="10.1771268"/><trkpt lat="52.408426" lon="10.1771245"/><trkpt lat="52.4081904" lon="10.177018"/><trkpt lat="52.4080691" lon="10.176939"/><trkpt lat="52.4079543" lon="10.1768424"/><trkpt lat="52.4075385" lon="10.1766186"/><trkpt lat="52.4075383" lon="10.1766022"/><trkpt lat="52.4075349" lon="10.1765871"/><trkpt lat="52.4075287" lon="10.1765748"/><trkpt lat="52.4075204" lon="10.1765664"/><trkpt lat="52.4075108" lon="10.176563"/><trkpt lat="52.4075011" lon="10.176565"/><trkpt lat="52.4074923" lon="10.176572"/><trkpt lat="52.4074854" lon="10.1765834"/><trkpt lat="52.4074812" lon="10.1765979"/></trkseg></trk><trk><name>Grüne Riede</name><desc>@id=way/34170610
+postal_code=31311</desc><trkseg><trkpt lat="52.40695487225558" lon="10.178790092468262"/><trkpt lat="52.4074174" lon="10.1789846"/><trkpt lat="52.40824424117884" lon="10.17932653427124"/></trkseg></trk><trk><name>Grüne Riede</name><desc>@id=way/34170610
 highway=residential
 name=Grüne Riede
 postal_code=31311</desc><trkseg><trkpt lat="52.409367" lon="10.1877017"/><trkpt lat="52.4094489" lon="10.187155"/></trkseg></trk><trk><name>Ostlandweg</name><desc>@id=way/34170804
@@ -59,7 +40,7 @@ name=Gasolinweg
 postal_code=31311</desc><trkseg><trkpt lat="52.4113032" lon="10.1836896"/><trkpt lat="52.4104748" lon="10.1833737"/><trkpt lat="52.4104194" lon="10.1833621"/><trkpt lat="52.4103891" lon="10.1833741"/><trkpt lat="52.4103621" lon="10.1833942"/><trkpt lat="52.4102884" lon="10.1835091"/></trkseg></trk><trk><name>Theodor-Heuß-Straße</name><desc>@id=way/34835510
 highway=residential
 name=Theodor-Heuß-Straße
-postal_code=31311</desc><trkseg><trkpt lat="52.4145199" lon="10.18154"/><trkpt lat="52.4152428" lon="10.1818409"/><trkpt lat="52.4156731" lon="10.1820285"/><trkpt lat="52.4160633" lon="10.1822028"/></trkseg></trk><trk><name>Heisterbusch</name><desc>@id=way/34839159
+postal_code=31311</desc><trkseg><trkpt lat="52.41532200885583" lon="10.181869268417358"/><trkpt lat="52.4156731" lon="10.1820285"/><trkpt lat="52.4160633" lon="10.1822028"/></trkseg></trk><trk><name>Heisterbusch</name><desc>@id=way/34839159
 highway=living_street
 name=Heisterbusch
 postal_code=31311
@@ -71,38 +52,20 @@ postal_code=31311</desc><trkseg><trkpt lat="52.4078264" lon="10.1779504"/><trkpt
 bicycle=designated
 highway=path
 name=Heisterbusch
-postal_code=31311</desc><trkseg><trkpt lat="52.4081437" lon="10.1781696"/><trkpt lat="52.4082342" lon="10.1782115"/><trkpt lat="52.4083416" lon="10.1782613"/><trkpt lat="52.4084539" lon="10.1783154"/><trkpt lat="52.4086087" lon="10.17839"/><trkpt lat="52.4088875" lon="10.1785174"/></trkseg></trk><trk><name>Pommernweg</name><desc>@id=way/34839407
+postal_code=31311</desc><trkseg><trkpt lat="52.4081437" lon="10.1781696"/><trkpt lat="52.4082342" lon="10.1782115"/><trkpt lat="52.4083416" lon="10.1782613"/></trkseg></trk><trk><name>Pommernweg</name><desc>@id=way/34839407
 highway=living_street
 name=Pommernweg
 postal_code=31311
 surface=paving_stones</desc><trkseg><trkpt lat="52.4068932" lon="10.1774193"/><trkpt lat="52.4069774" lon="10.1775575"/><trkpt lat="52.4070293" lon="10.1776019"/><trkpt lat="52.4074044" lon="10.1777634"/><trkpt lat="52.4078264" lon="10.1779504"/></trkseg></trk><trk><name>Gustav-Hennigs-Straße</name><desc>@id=way/34843726
 highway=residential
 name=Gustav-Hennigs-Straße
-postal_code=31311</desc><trkseg><trkpt lat="52.4079156" lon="10.1820343"/><trkpt lat="52.4077187" lon="10.1818564"/><trkpt lat="52.407611" lon="10.1817695"/><trkpt lat="52.4074249" lon="10.1816724"/><trkpt lat="52.4067855" lon="10.1814214"/><trkpt lat="52.4065407" lon="10.1813263"/><trkpt lat="52.4063303" lon="10.1812789"/><trkpt lat="52.4060715" lon="10.1812842"/><trkpt lat="52.4059742" lon="10.1812886"/><trkpt lat="52.4059339" lon="10.1812778"/></trkseg></trk><trk><name>Gustav-Hennigs-Straße</name><desc>@id=way/34843789
-highway=residential
-name=Gustav-Hennigs-Straße
-postal_code=31311</desc><trkseg><trkpt lat="52.4066765" lon="10.1821713"/><trkpt lat="52.4067855" lon="10.1814214"/></trkseg></trk><trk><name>Heinrich-Heine-Straße</name><desc>@id=way/34847218
-highway=residential
-name=Heinrich-Heine-Straße
-postal_code=31311</desc><trkseg><trkpt lat="52.4092903" lon="10.1847285"/><trkpt lat="52.4092728" lon="10.1846877"/><trkpt lat="52.4092481" lon="10.1846638"/><trkpt lat="52.4083539" lon="10.1842783"/><trkpt lat="52.4083067" lon="10.1842713"/><trkpt lat="52.4082659" lon="10.1842851"/><trkpt lat="52.4082387" lon="10.1843162"/><trkpt lat="52.4082011" lon="10.1843826"/><trkpt lat="52.4079341" lon="10.1853551"/><trkpt lat="52.4076428" lon="10.1863858"/></trkseg></trk><trk><name>Springberg</name><desc>@id=way/34847847
+postal_code=31311</desc><trkseg><trkpt lat="52.4067855" lon="10.1814214"/><trkpt lat="52.406540699999994" lon="10.1813263"/><trkpt lat="52.40633030000001" lon="10.1812789"/><trkpt lat="52.406071499999996" lon="10.1812842"/><trkpt lat="52.4059742" lon="10.1812886"/><trkpt lat="52.4059339" lon="10.1812778"/></trkseg></trk><trk><name>Springberg</name><desc>@id=way/34847847
 highway=residential
 name=Springberg
-postal_code=31311</desc><trkseg><trkpt lat="52.4079874" lon="10.1871589"/><trkpt lat="52.4080717" lon="10.1865641"/></trkseg></trk><trk><name>Pappelweg</name><desc>@id=way/34847975
-highway=unclassified
-name=Pappelweg
-postal_code=31311</desc><trkseg><trkpt lat="52.4188284" lon="10.1911224"/><trkpt lat="52.4187598" lon="10.1911011"/><trkpt lat="52.4171187" lon="10.1903996"/><trkpt lat="52.4162973" lon="10.1900485"/><trkpt lat="52.4162628" lon="10.1900338"/><trkpt lat="52.4146252" lon="10.1893304"/><trkpt lat="52.4143843" lon="10.1892269"/><trkpt lat="52.4140817" lon="10.1890969"/><trkpt lat="52.4123906" lon="10.1884189"/><trkpt lat="52.410776" lon="10.187727"/></trkseg></trk><trk><name>Pappelweg</name><desc>@id=way/34848021
+postal_code=31311</desc><trkseg><trkpt lat="52.4079874" lon="10.1871589"/><trkpt lat="52.4080717" lon="10.1865641"/></trkseg></trk><trk><name>Pappelweg</name><desc>@id=way/34848021
 highway=residential
 name=Pappelweg
-postal_code=31311</desc><trkseg><trkpt lat="52.410776" lon="10.187727"/><trkpt lat="52.4105179" lon="10.187611"/><trkpt lat="52.4101688" lon="10.1874721"/><trkpt lat="52.4100672" lon="10.1874237"/><trkpt lat="52.4094489" lon="10.187155"/><trkpt lat="52.4087718" lon="10.1868597"/><trkpt lat="52.4087314" lon="10.18684"/><trkpt lat="52.4080717" lon="10.1865641"/><trkpt lat="52.4076428" lon="10.1863858"/><trkpt lat="52.4075271" lon="10.1863312"/><trkpt lat="52.4072592" lon="10.186208"/><trkpt lat="52.4071181" lon="10.1861583"/><trkpt lat="52.406976" lon="10.1861414"/><trkpt lat="52.4067119" lon="10.1862118"/></trkseg></trk><trk><name>An der Masch</name><desc>@id=way/35667606
-highway=residential
-name=An der Masch
-postal_code=31311</desc><trkseg><trkpt lat="52.4061787" lon="10.1892725"/><trkpt lat="52.4062805" lon="10.1886295"/><trkpt lat="52.4063127" lon="10.1884255"/><trkpt lat="52.4064433" lon="10.1878318"/></trkseg></trk><trk><name>Bahnhofstraße</name><desc>@id=way/35679016
-highway=residential
-name=Bahnhofstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4034002" lon="10.1735213"/><trkpt lat="52.4039883" lon="10.1737705"/></trkseg></trk><trk><name>Fuhsestraße</name><desc>@id=way/37567979
-highway=residential
-name=Fuhsestraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4081968" lon="10.1810577"/><trkpt lat="52.4079156" lon="10.1820343"/><trkpt lat="52.4078963" lon="10.1821079"/><trkpt lat="52.4077873" lon="10.1824917"/><trkpt lat="52.4075312" lon="10.1834385"/><trkpt lat="52.4068624" lon="10.1858445"/><trkpt lat="52.4067949" lon="10.1860309"/><trkpt lat="52.4067119" lon="10.1862118"/><trkpt lat="52.4066386" lon="10.1862485"/></trkseg></trk><trk><name>Alte Dorfstraße</name><desc>@id=way/37567980
+postal_code=31311</desc><trkseg><trkpt lat="52.4084336082298" lon="10.18671125396729"/><trkpt lat="52.40777390377611" lon="10.18643535396729"/><trkpt lat="52.40734500088054" lon="10.18625705396729"/><trkpt lat="52.407229300099466" lon="10.18620245396729"/><trkpt lat="52.407118499841346" lon="10.186158120632172"/><trkpt lat="52.40697614387605" lon="10.186144709587097"/><trkpt lat="52.406727428903174" lon="10.18620640039444"/></trkseg></trk><trk><name>Alte Dorfstraße</name><desc>@id=way/37567980
 highway=residential
 name=Alte Dorfstraße
 postal_code=31311</desc><trkseg><trkpt lat="52.4058278" lon="10.1862407"/><trkpt lat="52.405737" lon="10.1860921"/></trkseg></trk><trk><name>Bahnhofstraße</name><desc>@id=way/37567981
@@ -111,93 +74,36 @@ name=Bahnhofstraße
 postal_code=31311</desc><trkseg><trkpt lat="52.4060096" lon="10.1746196"/><trkpt lat="52.4053341" lon="10.1743189"/><trkpt lat="52.4047394" lon="10.1740788"/><trkpt lat="52.4043339" lon="10.1739164"/></trkseg></trk><trk><name>Bahnhofstraße</name><desc>@id=way/37640504
 highway=residential
 name=Bahnhofstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4095646" lon="10.1761378"/><trkpt lat="52.4078139" lon="10.1753672"/><trkpt lat="52.4076623" lon="10.1753032"/><trkpt lat="52.4075784" lon="10.1752678"/><trkpt lat="52.4071202" lon="10.175081"/><trkpt lat="52.4069058" lon="10.1749905"/><trkpt lat="52.4066848" lon="10.1748972"/><trkpt lat="52.4065563" lon="10.174843"/><trkpt lat="52.406431" lon="10.1747901"/><trkpt lat="52.4062351" lon="10.1747121"/><trkpt lat="52.4060096" lon="10.1746196"/></trkseg></trk><trk><name>Ackersbergstraße</name><desc>@id=way/39068087
+postal_code=31311</desc><trkseg><trkpt lat="52.407578400000006" lon="10.1752678"/><trkpt lat="52.4071202" lon="10.175081"/><trkpt lat="52.406905800000004" lon="10.1749905"/><trkpt lat="52.4066848" lon="10.1748972"/><trkpt lat="52.40655630000001" lon="10.174843"/><trkpt lat="52.406431000000005" lon="10.1747901"/><trkpt lat="52.406235099999996" lon="10.1747121"/><trkpt lat="52.406009600000004" lon="10.1746196"/></trkseg></trk><trk><name>Ackersbergstraße</name><desc>@id=way/39068087
 highway=residential
 name=Ackersbergstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4105034" lon="10.1820881"/><trkpt lat="52.4109179" lon="10.1822555"/><trkpt lat="52.4109614" lon="10.1822736"/><trkpt lat="52.4114542" lon="10.1824881"/><trkpt lat="52.4121702" lon="10.1827955"/><trkpt lat="52.4124934" lon="10.1829343"/><trkpt lat="52.4133085" lon="10.1832782"/><trkpt lat="52.4137848" lon="10.1834792"/><trkpt lat="52.4139858" lon="10.1835612"/><trkpt lat="52.4149989" lon="10.1839959"/><trkpt lat="52.4151759" lon="10.1840755"/><trkpt lat="52.4155101" lon="10.1842081"/><trkpt lat="52.4175931" lon="10.1850904"/><trkpt lat="52.4176952" lon="10.185135"/><trkpt lat="52.4177423" lon="10.1851522"/></trkseg></trk><trk><name>Ackersbergstraße</name><desc>@id=way/39068088
+postal_code=31311</desc><trkseg><trkpt lat="52.41050340000002" lon="10.1820881"/><trkpt lat="52.410917900000015" lon="10.1822555"/><trkpt lat="52.411470770827385" lon="10.182502269744873"/></trkseg></trk><trk><name>Ackersbergstraße</name><desc>@id=way/39068087
 highway=residential
-maxspeed=30
 name=Ackersbergstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4090767" lon="10.1814842"/><trkpt lat="52.4097583" lon="10.1817691"/></trkseg></trk><trk><name>Alte Dorfstraße</name><desc>@id=way/40404031
+postal_code=31311</desc><trkseg><trkpt lat="52.414788679896304" lon="10.183907747268677"/><trkpt lat="52.41499889999999" lon="10.1839959"/><trkpt lat="52.41517590000001" lon="10.1840755"/><trkpt lat="52.41574081480594" lon="10.184307396411896"/></trkseg></trk><trk><name>Alte Dorfstraße</name><desc>@id=way/40404031
 highway=residential
 maxspeed=30
 name=Alte Dorfstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4052993" lon="10.1812072"/><trkpt lat="52.4053789" lon="10.180384"/><trkpt lat="52.4054508" lon="10.1796282"/><trkpt lat="52.4054594" lon="10.1795571"/></trkseg></trk><trk><name>Alte Dorfstraße</name><desc>@id=way/40404032
+postal_code=31311</desc><trkseg><trkpt lat="52.4052993" lon="10.1812072"/><trkpt lat="52.40541674328157" lon="10.179972946643828"/></trkseg></trk><trk><name>Alte Dorfstraße</name><desc>@id=way/40404032
 highway=residential
 name=Alte Dorfstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4054594" lon="10.1795571"/><trkpt lat="52.4054784" lon="10.1793769"/><trkpt lat="52.405537" lon="10.1788833"/><trkpt lat="52.4055994" lon="10.1783438"/><trkpt lat="52.4056322" lon="10.1780605"/><trkpt lat="52.4057383" lon="10.1770854"/><trkpt lat="52.4058541" lon="10.1760326"/><trkpt lat="52.4058888" lon="10.1757298"/><trkpt lat="52.4060096" lon="10.1746196"/></trkseg></trk><trk><name>Fuhsering</name><desc>@id=way/93423554
+postal_code=31311</desc><trkseg><trkpt lat="52.4057383" lon="10.1770854"/><trkpt lat="52.4058541" lon="10.1760326"/><trkpt lat="52.4058888" lon="10.1757298"/><trkpt lat="52.4060096" lon="10.1746196"/></trkseg></trk><trk><name>Fuhsering</name><desc>@id=way/93423554
 highway=residential
 name=Fuhsering
-postal_code=31311</desc><trkseg><trkpt lat="52.4086151" lon="10.1794744"/><trkpt lat="52.4090561" lon="10.1796604"/><trkpt lat="52.4090898" lon="10.1796645"/><trkpt lat="52.4091184" lon="10.1796444"/><trkpt lat="52.4091348" lon="10.1796135"/><trkpt lat="52.4092804" lon="10.1791053"/><trkpt lat="52.4093131" lon="10.1790382"/><trkpt lat="52.4095655" lon="10.1781115"/><trkpt lat="52.4095708" lon="10.1780136"/><trkpt lat="52.4095655" lon="10.1779693"/><trkpt lat="52.4095416" lon="10.1779369"/><trkpt lat="52.4091043" lon="10.1777381"/></trkseg></trk><trk><name>Ackersbergstraße</name><desc>@id=way/126643986
-highway=residential
-maxspeed=30
-name=Ackersbergstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4097583" lon="10.1817691"/><trkpt lat="52.40984" lon="10.1818048"/><trkpt lat="52.4100855" lon="10.1819122"/><trkpt lat="52.4101882" lon="10.1819552"/></trkseg></trk><trk><name>Ackersbergstraße</name><desc>@id=way/126643989
-highway=residential
-maxspeed=30
-name=Ackersbergstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4101882" lon="10.1819552"/><trkpt lat="52.4105034" lon="10.1820881"/></trkseg></trk><trk><name>Alte Dorfstraße</name><desc>@id=way/355142461
+postal_code=31311</desc><trkseg><trkpt lat="52.40863529866998" lon="10.179479420185087"/><trkpt lat="52.4090561" lon="10.1796604"/><trkpt lat="52.4090898" lon="10.1796645"/><trkpt lat="52.4091184" lon="10.1796444"/><trkpt lat="52.4091348" lon="10.1796135"/><trkpt lat="52.4092804" lon="10.1791053"/><trkpt lat="52.4093131" lon="10.1790382"/><trkpt lat="52.409517210579025" lon="10.178285837173462"/></trkseg></trk><trk><name>Alte Dorfstraße</name><desc>@id=way/355142461
 highway=residential
 name=Alte Dorfstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4061191" lon="10.1872372"/><trkpt lat="52.4060181" lon="10.1869141"/><trkpt lat="52.4058278" lon="10.1862407"/></trkseg></trk><trk><name>Bahnhofstraße</name><desc>@id=way/436511777
-highway=residential
-name=Bahnhofstraße</desc><trkseg><trkpt lat="52.4095646" lon="10.1761378"/><trkpt lat="52.4097755" lon="10.1762136"/><trkpt lat="52.4098129" lon="10.1762113"/><trkpt lat="52.4098347" lon="10.17621"/><trkpt lat="52.4098866" lon="10.1761867"/><trkpt lat="52.4099415" lon="10.1761502"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/488811725
+postal_code=31311</desc><trkseg><trkpt lat="52.4061191" lon="10.1872372"/><trkpt lat="52.4060181" lon="10.1869141"/><trkpt lat="52.4058278" lon="10.1862407"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/493703677
 highway=living_street
 name=Im Heesters
 oneway=no
-surface=paving_stones</desc><trkseg><trkpt lat="52.408659" lon="10.1768871"/><trkpt lat="52.4084606" lon="10.1770454"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/488811726
-highway=living_street
-name=Im Heesters
-oneway=no
-surface=paving_stones</desc><trkseg><trkpt lat="52.4086925" lon="10.1769971"/><trkpt lat="52.4084941" lon="10.1771554"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/488811727
-highway=living_street
-name=Im Heesters
-oneway=no
-surface=paving_stones</desc><trkseg><trkpt lat="52.4084606" lon="10.1770454"/><trkpt lat="52.408449" lon="10.1770601"/><trkpt lat="52.4084418" lon="10.1770809"/><trkpt lat="52.4084399" lon="10.1771047"/><trkpt lat="52.4084421" lon="10.1771268"/><trkpt lat="52.4084528" lon="10.1771468"/><trkpt lat="52.4084655" lon="10.1771587"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/488811728
-highway=living_street
-name=Im Heesters
-oneway=no
-surface=paving_stones</desc><trkseg><trkpt lat="52.4086925" lon="10.1769971"/><trkpt lat="52.4087041" lon="10.1769824"/><trkpt lat="52.408711" lon="10.1769607"/><trkpt lat="52.4087132" lon="10.1769378"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/488811729
-highway=living_street
-name=Im Heesters
-oneway=no
-surface=paving_stones</desc><trkseg><trkpt lat="52.4092256" lon="10.1773099"/><trkpt lat="52.408711" lon="10.1769607"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/492660500
-highway=living_street
-name=Im Heesters
-oneway=no
-surface=paving_stones</desc><trkseg><trkpt lat="52.4087132" lon="10.1769378"/><trkpt lat="52.4087093" lon="10.1769146"/><trkpt lat="52.4087008" lon="10.176895"/><trkpt lat="52.4086876" lon="10.1768838"/><trkpt lat="52.4086731" lon="10.1768808"/><trkpt lat="52.408659" lon="10.1768871"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/492660503
-highway=living_street
-name=Im Heesters
-oneway=no
-surface=paving_stones</desc><trkseg><trkpt lat="52.4084655" lon="10.1771587"/><trkpt lat="52.4084853" lon="10.1771597"/><trkpt lat="52.4084941" lon="10.1771554"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/493703674
-highway=living_street
-name=Im Heesters
-oneway=no
-surface=paving_stones</desc><trkseg><trkpt lat="52.4072668" lon="10.1767868"/><trkpt lat="52.407013" lon="10.1771904"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/493703675
-highway=living_street
-name=Im Heesters
-surface=paving_stones</desc><trkseg><trkpt lat="52.4072668" lon="10.1767868"/><trkpt lat="52.4072744" lon="10.1767974"/><trkpt lat="52.4072837" lon="10.1768033"/><trkpt lat="52.4072938" lon="10.1768036"/><trkpt lat="52.4073033" lon="10.1767985"/><trkpt lat="52.4073112" lon="10.1767884"/><trkpt lat="52.4073166" lon="10.1767746"/><trkpt lat="52.4073189" lon="10.1767586"/><trkpt lat="52.4073179" lon="10.1767432"/><trkpt lat="52.407314" lon="10.1767291"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/493703676
-highway=living_street
-name=Im Heesters
-surface=paving_stones</desc><trkseg><trkpt lat="52.407314" lon="10.1767291"/><trkpt lat="52.4073076" lon="10.1767178"/><trkpt lat="52.4072993" lon="10.1767103"/><trkpt lat="52.4072901" lon="10.1767075"/><trkpt lat="52.4072807" lon="10.1767096"/><trkpt lat="52.4072723" lon="10.1767165"/><trkpt lat="52.4072656" lon="10.1767273"/><trkpt lat="52.4072613" lon="10.1767411"/><trkpt lat="52.4072599" lon="10.1767564"/><trkpt lat="52.4072617" lon="10.1767726"/><trkpt lat="52.4072668" lon="10.1767868"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/493703677
-highway=living_street
-name=Im Heesters
-oneway=no
-surface=paving_stones</desc><trkseg><trkpt lat="52.4069708" lon="10.1772785"/><trkpt lat="52.4068932" lon="10.1774193"/><trkpt lat="52.4068513" lon="10.1774906"/><trkpt lat="52.4068073" lon="10.1775131"/><trkpt lat="52.4067635" lon="10.1775183"/><trkpt lat="52.4062191" lon="10.1772819"/><trkpt lat="52.4057383" lon="10.1770854"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/493703678
-highway=living_street
-name=Im Heesters</desc><trkseg><trkpt lat="52.407013" lon="10.1771904"/><trkpt lat="52.4070035" lon="10.1771821"/><trkpt lat="52.4069918" lon="10.1771791"/><trkpt lat="52.4069802" lon="10.1771828"/><trkpt lat="52.40697" lon="10.1771928"/><trkpt lat="52.4069626" lon="10.1772079"/><trkpt lat="52.4069587" lon="10.1772262"/><trkpt lat="52.4069589" lon="10.1772456"/><trkpt lat="52.4069631" lon="10.1772638"/><trkpt lat="52.4069708" lon="10.1772785"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/493703679
-highway=living_street
-name=Im Heesters</desc><trkseg><trkpt lat="52.4069708" lon="10.1772785"/><trkpt lat="52.4069811" lon="10.177288"/><trkpt lat="52.4069917" lon="10.1772911"/><trkpt lat="52.4070023" lon="10.1772888"/><trkpt lat="52.4070119" lon="10.1772811"/><trkpt lat="52.4070197" lon="10.177269"/><trkpt lat="52.4070247" lon="10.1772535"/><trkpt lat="52.4070266" lon="10.1772362"/><trkpt lat="52.4070251" lon="10.1772188"/><trkpt lat="52.4070204" lon="10.177203"/><trkpt lat="52.407013" lon="10.1771904"/></trkseg></trk><trk><name>Im Heesters</name><desc>@id=way/493911546
-highway=living_street
-name=Im Heesters
-oneway=no
-surface=paving_stones</desc><trkseg><trkpt lat="52.407314" lon="10.1767291"/><trkpt lat="52.4073963" lon="10.1766155"/><trkpt lat="52.4074518" lon="10.1765934"/><trkpt lat="52.4074812" lon="10.1765979"/><trkpt lat="52.4074801" lon="10.1766138"/><trkpt lat="52.4074822" lon="10.1766291"/><trkpt lat="52.4074871" lon="10.1766425"/><trkpt lat="52.4074945" lon="10.1766526"/><trkpt lat="52.4075034" lon="10.1766583"/><trkpt lat="52.4075129" lon="10.176659"/><trkpt lat="52.4075221" lon="10.1766547"/><trkpt lat="52.4075299" lon="10.1766457"/><trkpt lat="52.4075356" lon="10.1766331"/><trkpt lat="52.4075385" lon="10.1766186"/></trkseg></trk><trk><name>Fuhsestraße</name><desc>@id=way/582931636
+surface=paving_stones</desc><trkseg><trkpt lat="52.4068932" lon="10.1774193"/><trkpt lat="52.4068513" lon="10.1774906"/><trkpt lat="52.4068073" lon="10.1775131"/><trkpt lat="52.4067635" lon="10.1775183"/><trkpt lat="52.40647871252803" lon="10.177398025989532"/></trkseg></trk><trk><name>Fuhsestraße</name><desc>@id=way/582931636
 highway=residential
 name=Fuhsestraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4084019" lon="10.1802906"/><trkpt lat="52.4083681" lon="10.180418"/><trkpt lat="52.4082602" lon="10.180839"/><trkpt lat="52.4081968" lon="10.1810577"/></trkseg></trk><trk><name>Fuhsestraße</name><desc>@id=way/582931637
+postal_code=31311</desc><trkseg><trkpt lat="52.40854039800746" lon="10.179755687713623"/><trkpt lat="52.408456950704455" lon="10.180085599422455"/><trkpt lat="52.4083681" lon="10.180418"/><trkpt lat="52.4082671484078" lon="10.18081247806549"/></trkseg></trk><trk><name>Fuhsestraße</name><desc>@id=way/582931637
 highway=residential
 name=Fuhsestraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4066386" lon="10.1862485"/><trkpt lat="52.4065394" lon="10.186256"/><trkpt lat="52.4064434" lon="10.186269"/><trkpt lat="52.4059373" lon="10.1862265"/><trkpt lat="52.4058278" lon="10.1862407"/></trkseg></trk><trk><name>Alte Dorfstraße</name><desc>@id=way/582931639
+postal_code=31311</desc><trkseg><trkpt lat="52.4064434" lon="10.186269"/><trkpt lat="52.4059373" lon="10.1862265"/><trkpt lat="52.4058278" lon="10.1862407"/></trkseg></trk><trk><name>Alte Dorfstraße</name><desc>@id=way/582931639
 highway=residential
 name=Alte Dorfstraße
 postal_code=31311</desc><trkseg><trkpt lat="52.405737" lon="10.1860921"/><trkpt lat="52.4055928" lon="10.1856943"/></trkseg></trk><trk><name>Alte Dorfstraße</name><desc>@id=way/582931642
@@ -206,22 +112,19 @@ name=Alte Dorfstraße
 postal_code=31311</desc><trkseg><trkpt lat="52.4055928" lon="10.1856943"/><trkpt lat="52.4055366" lon="10.1855065"/><trkpt lat="52.405496" lon="10.1852944"/><trkpt lat="52.4054394" lon="10.1849312"/></trkseg></trk><trk><name>Alte Dorfstraße</name><desc>@id=way/582931643
 highway=residential
 name=Alte Dorfstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4054394" lon="10.1849312"/><trkpt lat="52.4054284" lon="10.1847846"/><trkpt lat="52.4053931" lon="10.1843407"/><trkpt lat="52.4053181" lon="10.1835862"/><trkpt lat="52.4053035" lon="10.1834195"/><trkpt lat="52.4052802" lon="10.1831532"/></trkseg></trk><trk><name>Kapellenweg</name><desc>@id=way/582931644
+postal_code=31311</desc><trkseg><trkpt lat="52.4054394" lon="10.1849312"/><trkpt lat="52.4054284" lon="10.1847846"/><trkpt lat="52.4053931" lon="10.1843407"/><trkpt lat="52.4053181" lon="10.1835862"/></trkseg></trk><trk><name>Kapellenweg</name><desc>@id=way/582931644
 highway=residential
 name=Kapellenweg
-postal_code=31311</desc><trkseg><trkpt lat="52.406301" lon="10.1855897"/><trkpt lat="52.4067508" lon="10.1831208"/></trkseg></trk><trk><name>Alte Dorfstraße</name><desc>@id=way/582931646
-highway=residential
-name=Alte Dorfstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4052802" lon="10.1831532"/><trkpt lat="52.4051853" lon="10.1823062"/></trkseg></trk><trk><name>Alte Dorfstraße</name><desc>@id=way/582931647
-highway=residential
-name=Alte Dorfstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4051853" lon="10.1823062"/><trkpt lat="52.4052121" lon="10.182046"/><trkpt lat="52.4052396" lon="10.1817787"/><trkpt lat="52.4052741" lon="10.1814442"/><trkpt lat="52.4052993" lon="10.1812072"/></trkseg></trk><trk><name>Bahnhofstraße</name><desc>@id=way/582931652
-highway=residential
-name=Bahnhofstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4039883" lon="10.1737705"/><trkpt lat="52.4040668" lon="10.1737791"/><trkpt lat="52.4041297" lon="10.1737533"/><trkpt lat="52.4041592" lon="10.1737192"/></trkseg></trk><trk><name>Bahnhofstraße</name><desc>@id=way/582931653
-highway=residential
-name=Bahnhofstraße
-postal_code=31311</desc><trkseg><trkpt lat="52.4043339" lon="10.1739164"/><trkpt lat="52.4042668" lon="10.1738589"/><trkpt lat="52.4042062" lon="10.1737933"/><trkpt lat="52.4041592" lon="10.1737192"/><trkpt lat="52.4040486" lon="10.1731882"/></trkseg></trk><trk><name>Gustav-Hennigs-Straße</name><desc>@id=way/582931654
+postal_code=31311</desc><trkseg><trkpt lat="52.406301" lon="10.1855897"/><trkpt lat="52.406627615263204" lon="10.183768272399902"/></trkseg></trk><trk><name>Gustav-Hennigs-Straße</name><desc>@id=way/582931654
 highway=residential
 name=Gustav-Hennigs-Straße
-postal_code=31311</desc><trkseg><trkpt lat="52.4059339" lon="10.1812778"/><trkpt lat="52.4058729" lon="10.1812418"/><trkpt lat="52.4058112" lon="10.181221"/><trkpt lat="52.4053693" lon="10.1812284"/><trkpt lat="52.4052993" lon="10.1812072"/></trkseg></trk></gpx>
+postal_code=31311</desc><trkseg><trkpt lat="52.4059339" lon="10.1812778"/><trkpt lat="52.4058729" lon="10.1812418"/><trkpt lat="52.4058112" lon="10.181221"/><trkpt lat="52.4053693" lon="10.1812284"/><trkpt lat="52.4052993" lon="10.1812072"/></trkseg></trk><trk><name>Sandkamp</name><desc>@id=way/34160190
+highway=residential
+name=Sandkamp
+postal_code=31311</desc><trkseg><trkpt lat="52.414199720177" lon="10.175507068634033"/><trkpt lat="52.414206264217086" lon="10.176628232002258"/></trkseg></trk><trk><name>Theodor-Storm-Straße</name><desc>@id=way/34847739
+highway=residential
+name=Theodor-Storm-Straße
+postal_code=31311</desc><trkseg><trkpt lat="52.40833914247854" lon="10.185533165931702"/><trkpt lat="52.4090044" lon="10.1858198"/></trkseg></trk><trk><name>Am Kapellenberg</name><desc>@id=way/34169507
+highway=residential
+name=Am Kapellenberg
+postal_code=31311</desc><trkseg><trkpt lat="52.406301" lon="10.1855897"/><trkpt lat="52.4059498" lon="10.1856457"/><trkpt lat="52.4055928" lon="10.1856943"/></trkseg></trk><trk><name></name><desc></desc><trkseg><trkpt lat="52.40559510353913" lon="10.17833948135376"/><trkpt lat="52.40517129220683" lon="10.178170502185822"/></trkseg></trk></gpx>
