@@ -12034,10 +12034,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.28"
-     inkscape:cx="534.04694"
-     inkscape:cy="111.65121"
+     inkscape:cx="327.06693"
+     inkscape:cy="377.86606"
      inkscape:document-units="mm"
-     inkscape:current-layer="g9418"
+     inkscape:current-layer="layer2"
      showgrid="false"
      borderlayer="true"
      inkscape:window-width="1366"
@@ -12062,7 +12062,8 @@
      inkscape:label="Map"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <g
        inkscape:label="river (text)"
        inkscape:groupmode="layer"
@@ -14408,8 +14409,7 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Cover"
-     sodipodi:insensitive="true">
+     inkscape:label="Cover">
     <rect
        id="rect11069"
        width="93.450478"
@@ -14452,7 +14452,7 @@
     <rect
        id="rect11069-7"
        width="41.564003"
-       height="43.94986"
+       height="52.838215"
        x="6.4789958"
        y="112.55822"
        style="fill:#ffffff;fill-opacity:0.50196078;stroke:#af8c2c;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -14529,15 +14529,19 @@
          id="flowRegion9462"><rect
            id="rect9464"
            width="146.55978"
-           height="176.23376"
+           height="226.23376"
            x="23.201941"
            y="333.65369" /></flowRegion><flowPara
          id="flowPara9466"
-         style="font-size:13.33333397px;line-height:15px">Das Parken auf den teilnehmenden Höfen ist nicht ge-stattet.</flowPara><flowPara
+         style="font-size:13.33333397px;line-height:15px">Das Parken auf den teilnehmenden Höfen ist nicht gestattet.</flowPara><flowPara
          style="font-size:13.33333397px;line-height:15px"
          id="flowPara9470">Dollbergen bietet genug öffentliche Parkmöglichkeiten.</flowPara><flowPara
          style="font-size:13.33333397px;line-height:15px"
-         id="flowPara9468">Bitte innerhalb der öffentlich gekenn-zeichneten Flächen parken.</flowPara></flowRoot>    <flowRoot
+         id="flowPara9468">Bitte innerhalb der öffentlich gekenn-zeichneten Flächen parken.</flowPara><flowPara
+         style="font-size:13.33333397px;line-height:15px"
+         id="flowPara4662" /><flowPara
+         style="font-size:13.33333397px;line-height:15px"
+         id="flowPara4664">Standangaben ohne Gewähr</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot9460-5-8"
        style="font-style:normal;font-weight:normal;font-size:13.33333302px;line-height:10px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
