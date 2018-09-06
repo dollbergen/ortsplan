@@ -40,7 +40,7 @@ name=Gasolinweg
 postal_code=31311</desc><trkseg><trkpt lat="52.4113032" lon="10.1836896"/><trkpt lat="52.4104748" lon="10.1833737"/><trkpt lat="52.4104194" lon="10.1833621"/><trkpt lat="52.4103891" lon="10.1833741"/><trkpt lat="52.4103621" lon="10.1833942"/><trkpt lat="52.4102884" lon="10.1835091"/></trkseg></trk><trk><name>Theodor-Heuß-Straße</name><desc>@id=way/34835510
 highway=residential
 name=Theodor-Heuß-Straße
-postal_code=31311</desc><trkseg><trkpt lat="52.41532200885583" lon="10.181869268417358"/><trkpt lat="52.4156731" lon="10.1820285"/><trkpt lat="52.4160633" lon="10.1822028"/></trkseg></trk><trk><name>Heisterbusch</name><desc>@id=way/34839159
+postal_code=31311</desc><trkseg><trkpt lat="52.41453346498364" lon="10.181544721126556"/><trkpt lat="52.41513060012464" lon="10.181791484355927"/></trkseg></trk><trk><name>Heisterbusch</name><desc>@id=way/34839159
 highway=living_street
 name=Heisterbusch
 postal_code=31311
