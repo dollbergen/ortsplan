@@ -160,7 +160,9 @@ features
 		contour major : contour[@isMulti(elevation, 100)]
 		contour minor : contour[@isMulti(elevation, 20) and not @isMulti(elevation, 100)]
 
-		flohmarkt_track : gpstrack[]
+		highway residential : gpstrack[name=Zufahrt]
+		flohmarkt parking area : gpstrack[name="Parking Area"]
+		flohmarkt_track : gpstrack[NOT (name="Parking Area" OR name="Zufahrt")]
 
 // 		dorferlebnispfad_track : gpstrack[name=Dorferlebnispfad]
 // 		hauptstrasse : gpstrack[name=Hauptstrasse]
@@ -196,9 +198,11 @@ features
 // 		motorway_junction : highway=motorway_junction
 // 		bench : amenity=bench OR leisure=picnic_table
 
- 		//cafe : gpswaypoint[name="Kaffee und Kuchen"]
- 		flohmarkt : gpswaypoint[]
- 		//parking : gpswaypoint[name="Parkplatz"]
+		//cafe : gpswaypoint[name="Kaffee und Kuchen"]
+// 		flohmarkt : gpswaypoint[]
+		flohmarkt parking : gpswaypoint[name="Parking"]
+		flohmarkt cafe : gpswaypoint[name="Cafe"]
+		flohmarkt kinder : gpswaypoint[name="Kinderflohmarkt"]
 
 		//gps trackpoints: gpstrack[].gpspoint[]
 		//gps routepoints: gpsroute[].gpspoint[]
@@ -1358,13 +1362,39 @@ rules
 			line-color : #ff0000
 			line-opacity : 1.0
 			line-width : 8
-			curved : true
+			curved : false
 		draw : line
-	target: flohmarkt
+	target: flohmarkt parking area
 		define
-			icon-image : icons/Dollbergen/png/flohmarkt.png
+			line-color : #000000
+			line-opacity : 1.0
+			line-width : 2
+			line-style : dash
+			curved : false
+		draw : line
+	target: flohmarkt cafe
+		define
+			icon-image : icons/Dollbergen/png/flohmarkt_cafe.png
 			min-zoom : 10
-			icon-width : 24
+			icon-width : 12
+			align-horizontal : center
+			align-vertical : far
+		draw : icon
+	target: flohmarkt parking
+		define
+			icon-image : icons/Dollbergen/png/flohmarkt_parking.png
+			min-zoom : 10
+			icon-width : 12
+			align-horizontal : center
+			align-vertical : far
+		draw : icon
+	target: flohmarkt kinder
+		define
+			icon-image : icons/Dollbergen/png/flohmarkt_kinder.png
+			min-zoom : 10
+			icon-width : 12
+			align-horizontal : center
+			align-vertical : far
 		draw : icon
 	target: bbq
 		define
