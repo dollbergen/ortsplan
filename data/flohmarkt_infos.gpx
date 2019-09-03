@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="GDAL 2.2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogr="http://osgeo.org/gdal" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<wpt lat="52.40981172268799" lon="10.179020762443542"><name></name><desc>type=parking
+description=Großer unbefestigter Parkplatz&lt;br&gt;Zufahrt über Feuerwehr</desc></wpt><wpt lat="52.410191313172184" lon="10.17707347869873"><name></name><desc>type=noparking
+description=Befestigte Parkplätze der Feuerwehr bitte NICHT belegen.</desc></wpt><wpt lat="52.40754720123781" lon="10.180648863315582"><name></name><desc>type=parking
+description=Wenige Parkplätze</desc></wpt><wpt lat="52.40750138602022" lon="10.183526873588562"><name></name><desc>type=roadclosed
+description=Aufgrund Bauarbeiten kein Durchfahrt für Autos in östliche Richtung</desc></wpt><wpt lat="52.406882875925554" lon="10.185763835906982"><name></name><desc>type=roadclosed
+description=Aufgrund Bauarbeiten kein Durchfahrt für Autos in westliche Richtung</desc></wpt><wpt lat="52.40512547452164" lon="10.179318487644196"><name></name><desc>type=essen
+description=Kaffee, Kuchen, Bratwurst und öffentliche Toiletten im Siedlerheim</desc></wpt><wpt lat="52.40724612893691" lon="10.181692242622375"><name></name><desc>type=parking
+description=Wenige Parkplätze</desc></wpt><wpt lat="52.410191313172184" lon="10.18354833126068"><name></name><desc>type=parking
+description=Wenige Parkplätze</desc></wpt><wpt lat="52.40746866083566" lon="10.182164311408997"><name></name><desc>type=kinderflohmarkt
+description=Kinderflohmark: Von Kindern, für Kinder.</desc></wpt><trk><name>Parking area</name><desc>type=parking
+name=Parking area</desc><trkseg><trkpt lat="52.410138956058255" lon="10.178285837173462"/><trkpt lat="52.40995243333471" lon="10.178162455558777"/><trkpt lat="52.40955320660895" lon="10.179739594459534"/><trkpt lat="52.40973973102073" lon="10.179873704910278"/><trkpt lat="52.410138956058255" lon="10.178285837173462"/></trkseg></trk><trk><name>Zufahrt</name><desc>type=parking
+name=Zufahrt</desc><trkseg><trkpt lat="52.410220764021474" lon="10.176558494567871"/><trkpt lat="52.41010623283045" lon="10.17730414867401"/><trkpt lat="52.410030969314434" lon="10.178216099739075"/></trkseg></trk><trk><name>Kinderflohmarkt</name><desc>name=Kinderflohmarkt</desc><trkseg><trkpt lat="52.4076650115788" lon="10.18195241689682"/><trkpt lat="52.40738848403093" lon="10.18181025981903"/><trkpt lat="52.40728539935355" lon="10.182437896728514"/><trkpt lat="52.4075341111805" lon="10.182563960552214"/><trkpt lat="52.4076650115788" lon="10.18195241689682"/></trkseg></trk></gpx>

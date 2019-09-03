@@ -1,6 +1,7 @@
 run-script file=Scripts/set_bounds.mscript
 load-source data/dollbergen.osm
-load-source data/flohmarkt.gpx
+load-source data/flohmarkt_infos.gpx
+load-source data/flohmarkt_streets.gpx
 use-ruleset location=Rules/Dollbergen.mrules as-alias=dollbergen
 apply-ruleset
 set-setting name=map.decoration.grid value=false
